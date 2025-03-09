@@ -1,0 +1,3 @@
+/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles/main.dir
+/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles/edit_cache.dir
+/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles/rebuild_cache.dir
