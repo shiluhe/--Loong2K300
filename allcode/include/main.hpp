@@ -18,10 +18,11 @@
 #include <sys/shm.h>    // 共享内存
 #include <sys/sem.h>    // 信号量集
 
-// #include <opencv2/opencv.hpp>
+//#include <opencv2/opencv.hpp>
 
 
-#include "gpio.hpp"
 
 // using namespace cv;
 using namespace std;
+
+void MotorTest();

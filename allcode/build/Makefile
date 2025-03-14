@@ -153,6 +153,78 @@ src/GPIO_Test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/GPIO_Test.cpp.s
 .PHONY : src/GPIO_Test.cpp.s
 
+src/HW_gpio.o: src/HW_gpio.cpp.o
+.PHONY : src/HW_gpio.o
+
+# target to build an object file
+src/HW_gpio.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/HW_gpio.cpp.o
+.PHONY : src/HW_gpio.cpp.o
+
+src/HW_gpio.i: src/HW_gpio.cpp.i
+.PHONY : src/HW_gpio.i
+
+# target to preprocess a source file
+src/HW_gpio.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/HW_gpio.cpp.i
+.PHONY : src/HW_gpio.cpp.i
+
+src/HW_gpio.s: src/HW_gpio.cpp.s
+.PHONY : src/HW_gpio.s
+
+# target to generate assembly for a file
+src/HW_gpio.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/HW_gpio.cpp.s
+.PHONY : src/HW_gpio.cpp.s
+
+src/MAP_ADDR.o: src/MAP_ADDR.cpp.o
+.PHONY : src/MAP_ADDR.o
+
+# target to build an object file
+src/MAP_ADDR.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/MAP_ADDR.cpp.o
+.PHONY : src/MAP_ADDR.cpp.o
+
+src/MAP_ADDR.i: src/MAP_ADDR.cpp.i
+.PHONY : src/MAP_ADDR.i
+
+# target to preprocess a source file
+src/MAP_ADDR.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/MAP_ADDR.cpp.i
+.PHONY : src/MAP_ADDR.cpp.i
+
+src/MAP_ADDR.s: src/MAP_ADDR.cpp.s
+.PHONY : src/MAP_ADDR.s
+
+# target to generate assembly for a file
+src/MAP_ADDR.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/MAP_ADDR.cpp.s
+.PHONY : src/MAP_ADDR.cpp.s
+
+src/Motor_Test.o: src/Motor_Test.cpp.o
+.PHONY : src/Motor_Test.o
+
+# target to build an object file
+src/Motor_Test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Motor_Test.cpp.o
+.PHONY : src/Motor_Test.cpp.o
+
+src/Motor_Test.i: src/Motor_Test.cpp.i
+.PHONY : src/Motor_Test.i
+
+# target to preprocess a source file
+src/Motor_Test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Motor_Test.cpp.i
+.PHONY : src/Motor_Test.cpp.i
+
+src/Motor_Test.s: src/Motor_Test.cpp.s
+.PHONY : src/Motor_Test.s
+
+# target to generate assembly for a file
+src/Motor_Test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Motor_Test.cpp.s
+.PHONY : src/Motor_Test.cpp.s
+
 src/Pwm_Test.o: src/Pwm_Test.cpp.o
 .PHONY : src/Pwm_Test.o
 
@@ -177,6 +249,30 @@ src/Pwm_Test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Pwm_Test.cpp.s
 .PHONY : src/Pwm_Test.cpp.s
 
+src/gitm_pwm_Test.o: src/gitm_pwm_Test.cpp.o
+.PHONY : src/gitm_pwm_Test.o
+
+# target to build an object file
+src/gitm_pwm_Test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/gitm_pwm_Test.cpp.o
+.PHONY : src/gitm_pwm_Test.cpp.o
+
+src/gitm_pwm_Test.i: src/gitm_pwm_Test.cpp.i
+.PHONY : src/gitm_pwm_Test.i
+
+# target to preprocess a source file
+src/gitm_pwm_Test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/gitm_pwm_Test.cpp.i
+.PHONY : src/gitm_pwm_Test.cpp.i
+
+src/gitm_pwm_Test.s: src/gitm_pwm_Test.cpp.s
+.PHONY : src/gitm_pwm_Test.s
+
+# target to generate assembly for a file
+src/gitm_pwm_Test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/gitm_pwm_Test.cpp.s
+.PHONY : src/gitm_pwm_Test.cpp.s
+
 src/gpio.o: src/gpio.cpp.o
 .PHONY : src/gpio.o
 
@@ -200,6 +296,30 @@ src/gpio.s: src/gpio.cpp.s
 src/gpio.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/gpio.cpp.s
 .PHONY : src/gpio.cpp.s
+
+src/gtim_pwm.o: src/gtim_pwm.cpp.o
+.PHONY : src/gtim_pwm.o
+
+# target to build an object file
+src/gtim_pwm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/gtim_pwm.cpp.o
+.PHONY : src/gtim_pwm.cpp.o
+
+src/gtim_pwm.i: src/gtim_pwm.cpp.i
+.PHONY : src/gtim_pwm.i
+
+# target to preprocess a source file
+src/gtim_pwm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/gtim_pwm.cpp.i
+.PHONY : src/gtim_pwm.cpp.i
+
+src/gtim_pwm.s: src/gtim_pwm.cpp.s
+.PHONY : src/gtim_pwm.s
+
+# target to generate assembly for a file
+src/gtim_pwm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/gtim_pwm.cpp.s
+.PHONY : src/gtim_pwm.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -261,12 +381,27 @@ help:
 	@echo "... src/GPIO_Test.o"
 	@echo "... src/GPIO_Test.i"
 	@echo "... src/GPIO_Test.s"
+	@echo "... src/HW_gpio.o"
+	@echo "... src/HW_gpio.i"
+	@echo "... src/HW_gpio.s"
+	@echo "... src/MAP_ADDR.o"
+	@echo "... src/MAP_ADDR.i"
+	@echo "... src/MAP_ADDR.s"
+	@echo "... src/Motor_Test.o"
+	@echo "... src/Motor_Test.i"
+	@echo "... src/Motor_Test.s"
 	@echo "... src/Pwm_Test.o"
 	@echo "... src/Pwm_Test.i"
 	@echo "... src/Pwm_Test.s"
+	@echo "... src/gitm_pwm_Test.o"
+	@echo "... src/gitm_pwm_Test.i"
+	@echo "... src/gitm_pwm_Test.s"
 	@echo "... src/gpio.o"
 	@echo "... src/gpio.i"
 	@echo "... src/gpio.s"
+	@echo "... src/gtim_pwm.o"
+	@echo "... src/gtim_pwm.i"
+	@echo "... src/gtim_pwm.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -1,4 +1,5 @@
 #include "gpio.hpp"
+#include "HW_gpio.hpp"
 
 /*LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
  * @函数名称：void GpioOutputTest1()
@@ -32,19 +33,19 @@ void GpioOutputTest1(int gpio)
  * @调用方法：GpioOutputTest2();
  * @备注说明：无
  QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ*/
-// void GpioOutputTest2(int gpio)
-// {
-//     HWGpio Gpio(gpio, GPIO_Mode_Out);
-//     while(1)
-//     {
-//         Gpio.SetGpioValue(0);
-//         printf("Set HWGpio value 0\n");
-//         sleep(1);
-//         Gpio.SetGpioValue(1);
-//         printf("Set HWGpio value 1\n");
-//         sleep(1);
-//     }
-// }
+void GpioOutputTest2(int gpio)
+{
+    HWGpio Gpio(gpio, GPIO_Mode_Out);
+    while(1)
+    {
+        Gpio.SetGpioValue(0);
+        printf("Set HWGpio value 0\n");
+        sleep(1);
+        Gpio.SetGpioValue(1);
+        printf("Set HWGpio value 1\n");
+        sleep(1);
+    }
+}
 
 /*LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
  * @函数名称：void GpioTest()
