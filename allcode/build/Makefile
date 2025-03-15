@@ -249,6 +249,30 @@ src/Pwm_Test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Pwm_Test.cpp.s
 .PHONY : src/Pwm_Test.cpp.s
 
+src/Servo_Test.o: src/Servo_Test.cpp.o
+.PHONY : src/Servo_Test.o
+
+# target to build an object file
+src/Servo_Test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Servo_Test.cpp.o
+.PHONY : src/Servo_Test.cpp.o
+
+src/Servo_Test.i: src/Servo_Test.cpp.i
+.PHONY : src/Servo_Test.i
+
+# target to preprocess a source file
+src/Servo_Test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Servo_Test.cpp.i
+.PHONY : src/Servo_Test.cpp.i
+
+src/Servo_Test.s: src/Servo_Test.cpp.s
+.PHONY : src/Servo_Test.s
+
+# target to generate assembly for a file
+src/Servo_Test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Servo_Test.cpp.s
+.PHONY : src/Servo_Test.cpp.s
+
 src/gitm_pwm_Test.o: src/gitm_pwm_Test.cpp.o
 .PHONY : src/gitm_pwm_Test.o
 
@@ -393,6 +417,9 @@ help:
 	@echo "... src/Pwm_Test.o"
 	@echo "... src/Pwm_Test.i"
 	@echo "... src/Pwm_Test.s"
+	@echo "... src/Servo_Test.o"
+	@echo "... src/Servo_Test.i"
+	@echo "... src/Servo_Test.s"
 	@echo "... src/gitm_pwm_Test.o"
 	@echo "... src/gitm_pwm_Test.i"
 	@echo "... src/gitm_pwm_Test.s"

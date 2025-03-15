@@ -26,6 +26,11 @@
 },
 {
   "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
+  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include/opencv2 -g -o CMakeFiles/main.dir/src/Servo_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/Servo_Test.cpp",
+  "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/src/Servo_Test.cpp"
+},
+{
+  "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
   "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include/opencv2 -g -o CMakeFiles/main.dir/src/gitm_pwm_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/gitm_pwm_Test.cpp",
   "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/src/gitm_pwm_Test.cpp"
 },

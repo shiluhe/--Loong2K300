@@ -26,3 +26,4 @@
 using namespace std;
 
 void MotorTest();
+void ServoTest();

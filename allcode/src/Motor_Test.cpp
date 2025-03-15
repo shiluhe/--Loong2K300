@@ -1,4 +1,3 @@
-#include "gpio.hpp"
 #include "HW_gpio.hpp"
 #include "pwm.hpp"
 

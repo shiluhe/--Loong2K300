@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/src/Motor_Test.cpp.o.d"
   "CMakeFiles/main.dir/src/Pwm_Test.cpp.o"
   "CMakeFiles/main.dir/src/Pwm_Test.cpp.o.d"
+  "CMakeFiles/main.dir/src/Servo_Test.cpp.o"
+  "CMakeFiles/main.dir/src/Servo_Test.cpp.o.d"
   "CMakeFiles/main.dir/src/gitm_pwm_Test.cpp.o"
   "CMakeFiles/main.dir/src/gitm_pwm_Test.cpp.o.d"
   "CMakeFiles/main.dir/src/gpio.cpp.o"
