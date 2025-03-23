@@ -1,57 +1,87 @@
 [
 {
   "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
-  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include/opencv2 -g -o CMakeFiles/main.dir/src/GPIO_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/GPIO_Test.cpp",
+  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include -g -o CMakeFiles/main.dir/src/Cam_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/Cam_Test.cpp",
+  "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/src/Cam_Test.cpp"
+},
+{
+  "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
+  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include -g -o CMakeFiles/main.dir/src/GPIO_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/GPIO_Test.cpp",
   "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/src/GPIO_Test.cpp"
 },
 {
   "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
-  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include/opencv2 -g -o CMakeFiles/main.dir/src/HW_gpio.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/HW_gpio.cpp",
+  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include -g -o CMakeFiles/main.dir/src/HW_SPI.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/HW_SPI.cpp",
+  "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/src/HW_SPI.cpp"
+},
+{
+  "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
+  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include -g -o CMakeFiles/main.dir/src/HW_gpio.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/HW_gpio.cpp",
   "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/src/HW_gpio.cpp"
 },
 {
   "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
-  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include/opencv2 -g -o CMakeFiles/main.dir/src/MAP_ADDR.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/MAP_ADDR.cpp",
+  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include -g -o CMakeFiles/main.dir/src/MAP_ADDR.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/MAP_ADDR.cpp",
   "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/src/MAP_ADDR.cpp"
 },
 {
   "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
-  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include/opencv2 -g -o CMakeFiles/main.dir/src/Motor_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/Motor_Test.cpp",
+  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include -g -o CMakeFiles/main.dir/src/Motor_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/Motor_Test.cpp",
   "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/src/Motor_Test.cpp"
 },
 {
   "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
-  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include/opencv2 -g -o CMakeFiles/main.dir/src/Pwm_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/Pwm_Test.cpp",
+  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include -g -o CMakeFiles/main.dir/src/Pwm_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/Pwm_Test.cpp",
   "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/src/Pwm_Test.cpp"
 },
 {
   "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
-  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include/opencv2 -g -o CMakeFiles/main.dir/src/Servo_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/Servo_Test.cpp",
+  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include -g -o CMakeFiles/main.dir/src/Robomain.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/Robomain.cpp",
+  "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/src/Robomain.cpp"
+},
+{
+  "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
+  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include -g -o CMakeFiles/main.dir/src/Servo_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/Servo_Test.cpp",
   "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/src/Servo_Test.cpp"
 },
 {
   "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
-  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include/opencv2 -g -o CMakeFiles/main.dir/src/gitm_pwm_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/gitm_pwm_Test.cpp",
-  "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/src/gitm_pwm_Test.cpp"
+  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include -g -o CMakeFiles/main.dir/src/TFT.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/TFT.cpp",
+  "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/src/TFT.cpp"
 },
 {
   "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
-  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include/opencv2 -g -o CMakeFiles/main.dir/src/gpio.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/gpio.cpp",
+  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include -g -o CMakeFiles/main.dir/src/TFT_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/TFT_Test.cpp",
+  "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/src/TFT_Test.cpp"
+},
+{
+  "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
+  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include -g -o CMakeFiles/main.dir/src/gpio.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/gpio.cpp",
   "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/src/gpio.cpp"
 },
 {
   "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
-  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include/opencv2 -g -o CMakeFiles/main.dir/src/gtim_pwm.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/gtim_pwm.cpp",
+  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include -g -o CMakeFiles/main.dir/src/gtim_pwm.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/gtim_pwm.cpp",
   "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/src/gtim_pwm.cpp"
 },
 {
   "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
-  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include/opencv2 -g -o CMakeFiles/main.dir/src/main.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/main.cpp",
+  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include -g -o CMakeFiles/main.dir/src/gtim_pwm_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/gtim_pwm_Test.cpp",
+  "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/src/gtim_pwm_Test.cpp"
+},
+{
+  "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
+  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include -g -o CMakeFiles/main.dir/src/image.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/image.cpp",
+  "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/src/image.cpp"
+},
+{
+  "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
+  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include -g -o CMakeFiles/main.dir/src/main.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/main.cpp",
   "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/src/main.cpp"
 },
 {
   "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
-  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include/opencv2 -g -o CMakeFiles/main.dir/src/pwm.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/pwm.cpp",
+  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include -g -o CMakeFiles/main.dir/src/pwm.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/pwm.cpp",
   "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/src/pwm.cpp"
 }
 ]

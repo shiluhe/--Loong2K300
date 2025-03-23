@@ -22,6 +22,7 @@ class SetPWM {
 public:
     SetPWM();   // 构造函数
     SetPWM(const string &mold, int cycle, int duty_cycle, const string &polarity);
+    //SetPWM(const string &mold, int cycle, const string &polarity);
     int ExportPWM(const string &mold);       // 导出通道
     int UnexportPWM();                       // 关闭通道
     int SetPeriod(int cycle);                // 设置周期

@@ -17,7 +17,7 @@ int main()
     // PwmHWTest();            // PWM 测试(寄存器)
     //GtimPwmTest();          // Gtim PWM 测试(硬件)
     // EncoderTest();          // 编码器测试(寄存器)
-    // CameraTest();           // 摄像头测试
+    //CameraTest();           // 摄像头测试
     // AdcFunTest();           // ADC 功能测试
     // TFTTest();              // TFT屏幕测试
     // GetTimeTest();          // 时间戳打印测试
@@ -26,8 +26,10 @@ int main()
     // nanosleepTest();        // nanosleep()函数测试 -- 以纳秒为单位延时
     // clock_nanosleepTest();  // clock_nanosleep()函数测试 -- 以纳秒为单位延时
     //MotorTest();            // 电机测试程序
-    ServoTest();            // 舵机测试程序
+    //ServoTest();            // 舵机测试程序
     // GpioTest();             // 久久派22个GPIO翻转测试
+    BeepOff();
+    Motion();
 
     while (1)
     {

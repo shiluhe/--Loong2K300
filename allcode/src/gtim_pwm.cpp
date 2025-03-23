@@ -28,8 +28,34 @@ GtimPwm::GtimPwm()
  * @备注说明：参数六设置有默认值，可以不修改，GPIO 对应的通道号可查看：
  *           《龙芯2K0300处理器用户手册》
  QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ*/
-GtimPwm::GtimPwm(uint8_t gpio, uint8_t chNum, uint8_t pol, uint32_t period, uint32_t duty_cycle, int mux)
-    : Gpio(gpio), Pol(pol), Period(period), Duty_cycle(duty_cycle), ChNum(chNum - 1)
+// GtimPwm::GtimPwm(uint8_t gpio, uint8_t chNum, uint8_t pol, uint32_t period, uint32_t duty_cycle, int mux)
+//     : Gpio(gpio), Pol(pol), Period(period), Duty_cycle(duty_cycle), ChNum(chNum - 1)
+// {
+//     // 配置功能复用
+//     GpioReuse(this->Gpio, mux);
+//     // 初始化所有寄存器
+//     LS_writel(AddressMap(LS_GTIM_BASE_ADDR + LS_GTIM_EGR, PAGE_SIZE), 0x01);
+//     // 启动计数器
+//     LS_writel(AddressMap(LS_GTIM_BASE_ADDR + LS_GTIM_CR1, PAGE_SIZE), 0x01);
+//     // 获取虚拟地址
+//     this->GTIM_ARR     = AddressMap(LS_GTIM_BASE_ADDR + LS_GTIM_ARR, PAGE_SIZE);
+//     this->GTIM_CCRx    = AddressMap(LS_GTIM_BASE_ADDR + LS_GTIM_CCR1 + this->ChNum * LS_GTIM_CCRx_OFS, PAGE_SIZE);
+//     this->GTIM_CCMR[0] = AddressMap(LS_GTIM_BASE_ADDR + LS_GTIM_CCMR1, PAGE_SIZE);
+//     this->GTIM_CCMR[1] = AddressMap(LS_GTIM_BASE_ADDR + LS_GTIM_CCMR2, PAGE_SIZE);
+//     this->GTIM_CCER    = AddressMap(LS_GTIM_BASE_ADDR + LS_GTIM_CCER, PAGE_SIZE);
+//     this->GTIM_CNT     = AddressMap(LS_GTIM_BASE_ADDR + LS_GTIM_CNT, PAGE_SIZE);
+//     // 设置 PWM 模式，默认为模式 2
+//     this->SetMode(LS_GTIM_Mode_2);
+//     // 设置极性
+//     this->SetPolarity(this->Pol);
+//     // 设置周期
+//     this->SetPeriod(this->Period);
+//     // 设置占空比
+//     this->SetDutyCycle(this->Duty_cycle);
+// }
+
+GtimPwm::GtimPwm(uint8_t gpio, uint8_t chNum, uint8_t pol, uint32_t period, int mux)
+    : Gpio(gpio), Pol(pol), Period(period), ChNum(chNum - 1)
 {
     // 配置功能复用
     GpioReuse(this->Gpio, mux);
@@ -51,7 +77,7 @@ GtimPwm::GtimPwm(uint8_t gpio, uint8_t chNum, uint8_t pol, uint32_t period, uint
     // 设置周期
     this->SetPeriod(this->Period);
     // 设置占空比
-    this->SetDutyCycle(this->Duty_cycle);
+    //this->SetDutyCycle(this->Duty_cycle);
 }
 
 /*LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL

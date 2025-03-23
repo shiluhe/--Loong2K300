@@ -16,7 +16,7 @@ include_directories(${PROJECT_SOURCE_DIR}/include)  # 指定所需头文件路�
 include_directories(/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/loongarch64-linux-gnu/sysroot/usr/include/)
 
 # 指定OpenCV所用头文件路径
-include_directories(/home/hsl/opencv/install/include/opencv2)
+include_directories(/home/hsl/opencv/install/include)
 # 找到opencv所需的库文件并保存到变量中
 find_library(OPENCV_CORE      opencv_core      /home/hsl/opencv/install/lib)
 find_library(OPENCV_IMGPROC   opencv_imgproc   /home/hsl/opencv/install/lib)

@@ -129,6 +129,30 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+src/Cam_Test.o: src/Cam_Test.cpp.o
+.PHONY : src/Cam_Test.o
+
+# target to build an object file
+src/Cam_Test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Cam_Test.cpp.o
+.PHONY : src/Cam_Test.cpp.o
+
+src/Cam_Test.i: src/Cam_Test.cpp.i
+.PHONY : src/Cam_Test.i
+
+# target to preprocess a source file
+src/Cam_Test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Cam_Test.cpp.i
+.PHONY : src/Cam_Test.cpp.i
+
+src/Cam_Test.s: src/Cam_Test.cpp.s
+.PHONY : src/Cam_Test.s
+
+# target to generate assembly for a file
+src/Cam_Test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Cam_Test.cpp.s
+.PHONY : src/Cam_Test.cpp.s
+
 src/GPIO_Test.o: src/GPIO_Test.cpp.o
 .PHONY : src/GPIO_Test.o
 
@@ -152,6 +176,30 @@ src/GPIO_Test.s: src/GPIO_Test.cpp.s
 src/GPIO_Test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/GPIO_Test.cpp.s
 .PHONY : src/GPIO_Test.cpp.s
+
+src/HW_SPI.o: src/HW_SPI.cpp.o
+.PHONY : src/HW_SPI.o
+
+# target to build an object file
+src/HW_SPI.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/HW_SPI.cpp.o
+.PHONY : src/HW_SPI.cpp.o
+
+src/HW_SPI.i: src/HW_SPI.cpp.i
+.PHONY : src/HW_SPI.i
+
+# target to preprocess a source file
+src/HW_SPI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/HW_SPI.cpp.i
+.PHONY : src/HW_SPI.cpp.i
+
+src/HW_SPI.s: src/HW_SPI.cpp.s
+.PHONY : src/HW_SPI.s
+
+# target to generate assembly for a file
+src/HW_SPI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/HW_SPI.cpp.s
+.PHONY : src/HW_SPI.cpp.s
 
 src/HW_gpio.o: src/HW_gpio.cpp.o
 .PHONY : src/HW_gpio.o
@@ -249,6 +297,30 @@ src/Pwm_Test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Pwm_Test.cpp.s
 .PHONY : src/Pwm_Test.cpp.s
 
+src/Robomain.o: src/Robomain.cpp.o
+.PHONY : src/Robomain.o
+
+# target to build an object file
+src/Robomain.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Robomain.cpp.o
+.PHONY : src/Robomain.cpp.o
+
+src/Robomain.i: src/Robomain.cpp.i
+.PHONY : src/Robomain.i
+
+# target to preprocess a source file
+src/Robomain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Robomain.cpp.i
+.PHONY : src/Robomain.cpp.i
+
+src/Robomain.s: src/Robomain.cpp.s
+.PHONY : src/Robomain.s
+
+# target to generate assembly for a file
+src/Robomain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Robomain.cpp.s
+.PHONY : src/Robomain.cpp.s
+
 src/Servo_Test.o: src/Servo_Test.cpp.o
 .PHONY : src/Servo_Test.o
 
@@ -273,29 +345,53 @@ src/Servo_Test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Servo_Test.cpp.s
 .PHONY : src/Servo_Test.cpp.s
 
-src/gitm_pwm_Test.o: src/gitm_pwm_Test.cpp.o
-.PHONY : src/gitm_pwm_Test.o
+src/TFT.o: src/TFT.cpp.o
+.PHONY : src/TFT.o
 
 # target to build an object file
-src/gitm_pwm_Test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/gitm_pwm_Test.cpp.o
-.PHONY : src/gitm_pwm_Test.cpp.o
+src/TFT.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TFT.cpp.o
+.PHONY : src/TFT.cpp.o
 
-src/gitm_pwm_Test.i: src/gitm_pwm_Test.cpp.i
-.PHONY : src/gitm_pwm_Test.i
+src/TFT.i: src/TFT.cpp.i
+.PHONY : src/TFT.i
 
 # target to preprocess a source file
-src/gitm_pwm_Test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/gitm_pwm_Test.cpp.i
-.PHONY : src/gitm_pwm_Test.cpp.i
+src/TFT.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TFT.cpp.i
+.PHONY : src/TFT.cpp.i
 
-src/gitm_pwm_Test.s: src/gitm_pwm_Test.cpp.s
-.PHONY : src/gitm_pwm_Test.s
+src/TFT.s: src/TFT.cpp.s
+.PHONY : src/TFT.s
 
 # target to generate assembly for a file
-src/gitm_pwm_Test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/gitm_pwm_Test.cpp.s
-.PHONY : src/gitm_pwm_Test.cpp.s
+src/TFT.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TFT.cpp.s
+.PHONY : src/TFT.cpp.s
+
+src/TFT_Test.o: src/TFT_Test.cpp.o
+.PHONY : src/TFT_Test.o
+
+# target to build an object file
+src/TFT_Test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TFT_Test.cpp.o
+.PHONY : src/TFT_Test.cpp.o
+
+src/TFT_Test.i: src/TFT_Test.cpp.i
+.PHONY : src/TFT_Test.i
+
+# target to preprocess a source file
+src/TFT_Test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TFT_Test.cpp.i
+.PHONY : src/TFT_Test.cpp.i
+
+src/TFT_Test.s: src/TFT_Test.cpp.s
+.PHONY : src/TFT_Test.s
+
+# target to generate assembly for a file
+src/TFT_Test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TFT_Test.cpp.s
+.PHONY : src/TFT_Test.cpp.s
 
 src/gpio.o: src/gpio.cpp.o
 .PHONY : src/gpio.o
@@ -344,6 +440,54 @@ src/gtim_pwm.s: src/gtim_pwm.cpp.s
 src/gtim_pwm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/gtim_pwm.cpp.s
 .PHONY : src/gtim_pwm.cpp.s
+
+src/gtim_pwm_Test.o: src/gtim_pwm_Test.cpp.o
+.PHONY : src/gtim_pwm_Test.o
+
+# target to build an object file
+src/gtim_pwm_Test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/gtim_pwm_Test.cpp.o
+.PHONY : src/gtim_pwm_Test.cpp.o
+
+src/gtim_pwm_Test.i: src/gtim_pwm_Test.cpp.i
+.PHONY : src/gtim_pwm_Test.i
+
+# target to preprocess a source file
+src/gtim_pwm_Test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/gtim_pwm_Test.cpp.i
+.PHONY : src/gtim_pwm_Test.cpp.i
+
+src/gtim_pwm_Test.s: src/gtim_pwm_Test.cpp.s
+.PHONY : src/gtim_pwm_Test.s
+
+# target to generate assembly for a file
+src/gtim_pwm_Test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/gtim_pwm_Test.cpp.s
+.PHONY : src/gtim_pwm_Test.cpp.s
+
+src/image.o: src/image.cpp.o
+.PHONY : src/image.o
+
+# target to build an object file
+src/image.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/image.cpp.o
+.PHONY : src/image.cpp.o
+
+src/image.i: src/image.cpp.i
+.PHONY : src/image.i
+
+# target to preprocess a source file
+src/image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/image.cpp.i
+.PHONY : src/image.cpp.i
+
+src/image.s: src/image.cpp.s
+.PHONY : src/image.s
+
+# target to generate assembly for a file
+src/image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/image.cpp.s
+.PHONY : src/image.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -402,9 +546,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... src/Cam_Test.o"
+	@echo "... src/Cam_Test.i"
+	@echo "... src/Cam_Test.s"
 	@echo "... src/GPIO_Test.o"
 	@echo "... src/GPIO_Test.i"
 	@echo "... src/GPIO_Test.s"
+	@echo "... src/HW_SPI.o"
+	@echo "... src/HW_SPI.i"
+	@echo "... src/HW_SPI.s"
 	@echo "... src/HW_gpio.o"
 	@echo "... src/HW_gpio.i"
 	@echo "... src/HW_gpio.s"
@@ -417,18 +567,30 @@ help:
 	@echo "... src/Pwm_Test.o"
 	@echo "... src/Pwm_Test.i"
 	@echo "... src/Pwm_Test.s"
+	@echo "... src/Robomain.o"
+	@echo "... src/Robomain.i"
+	@echo "... src/Robomain.s"
 	@echo "... src/Servo_Test.o"
 	@echo "... src/Servo_Test.i"
 	@echo "... src/Servo_Test.s"
-	@echo "... src/gitm_pwm_Test.o"
-	@echo "... src/gitm_pwm_Test.i"
-	@echo "... src/gitm_pwm_Test.s"
+	@echo "... src/TFT.o"
+	@echo "... src/TFT.i"
+	@echo "... src/TFT.s"
+	@echo "... src/TFT_Test.o"
+	@echo "... src/TFT_Test.i"
+	@echo "... src/TFT_Test.s"
 	@echo "... src/gpio.o"
 	@echo "... src/gpio.i"
 	@echo "... src/gpio.s"
 	@echo "... src/gtim_pwm.o"
 	@echo "... src/gtim_pwm.i"
 	@echo "... src/gtim_pwm.s"
+	@echo "... src/gtim_pwm_Test.o"
+	@echo "... src/gtim_pwm_Test.i"
+	@echo "... src/gtim_pwm_Test.s"
+	@echo "... src/image.o"
+	@echo "... src/image.i"
+	@echo "... src/image.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

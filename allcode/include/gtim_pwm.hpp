@@ -40,7 +40,8 @@ class GtimPwm
 {
 public:
     GtimPwm();
-    GtimPwm(uint8_t gpio, uint8_t chNum, uint8_t pol, uint32_t period, uint32_t duty_cycle, int mux = 0b11);
+    //GtimPwm(uint8_t gpio, uint8_t chNum, uint8_t pol, uint32_t period, uint32_t duty_cycle, int mux = 0b11);
+    GtimPwm(uint8_t gpio, uint8_t chNum, uint8_t pol, uint32_t period, int mux = 0b11);
     void Enable(void);                      // 使能
     void Disable(void);                     // 失能
     void SetPolarity(uint8_t pol);          // 设置极性

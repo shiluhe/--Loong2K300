@@ -43,6 +43,7 @@ SetPWM::SetPWM(const string &mold, int cycle, int duty_cycle, const string &pola
     this->SetPolarity(polarity);
 }
 
+
 /*LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
  * @函数名称：SetPWM::~SetPWM()
  * @功能说明：配置 PWM 的析构函数
