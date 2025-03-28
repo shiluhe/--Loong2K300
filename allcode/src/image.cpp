@@ -1,7 +1,6 @@
 //八临域代码
 #include "image.hpp"
-#include "main.hpp"
-#include "TFT.hpp"
+
 // 定义 bin_image 为全局变量
 uint8_t bin_image[image_h][image_w];  
 
@@ -44,7 +43,7 @@ uint8 get_start_point(uint8 start_row)
 	{
 		start_point_l[0] = i;//x
 		start_point_l[1] = start_row;//y
-		if (bin_image[start_row][i] == 255 && bin_image[start_row][i - 1] == 0)
+		if (bin_image[start_row][i] == 1 && bin_image[start_row][i - 1] == 0)
 		{
 			printf("找到左边起点image[%d][%d]\n", start_row,i);
 			l_found = 1;
@@ -56,7 +55,7 @@ uint8 get_start_point(uint8 start_row)
 	{
 		start_point_r[0] = i;//x
 		start_point_r[1] = start_row;//y
-		if (bin_image[start_row][i] == 255 && bin_image[start_row][i + 1] == 0)
+		if (bin_image[start_row][i] == 1 && bin_image[start_row][i + 1] == 0)
 		{
 			printf("找到右边起点image[%d][%d]\n",start_row, i);
 			r_found = 1;
@@ -371,66 +370,108 @@ void image_draw_rectan(uint8(*image)[image_w])
 		//image[image_h-1][i] = 0;
 
 	}
+//////////////调试打印////////////////////////////
+	    //     for (int i = 0; i < image_h; i += 2) {
+        //     for (int j = 0; j < image_w; j += 2) {
+        //         printf("%d ", bin_image[i][j]);
+        //     }
+        //     printf("\n");
+        // }
+////////////////////////////////////////////////////////
 }
-/*
-函数名称：void Cam_Address()
-功能说明：opencv二值化
-example:Cam_Address()
-*/
-void Cam_Address()
-{
-    VideoCapture cap(0);
-    if (!cap.isOpened())
-    {
+
+Mat capture_frame() {
+    static VideoCapture cap(0);  // 使用static保持摄像头持续打开
+    if (!cap.isOpened()) {
         cerr << "Error opening video stream" << endl;
-        return;
+        return Mat();  // 返回空的Mat对象
     }
 
     // 设置摄像头参数
     cap.set(CAP_PROP_FRAME_WIDTH, image_w);
     cap.set(CAP_PROP_FRAME_HEIGHT, image_h);
     cap.set(CAP_PROP_FPS, 60);
-	double fps = cap.get(CAP_PROP_FPS);  // 读取摄像头实际帧率
+    double fps = cap.get(CAP_PROP_FPS);  // 读取摄像头实际帧率
+    cout << "摄像头当前帧率: " << fps << " FPS" << endl;
 
-    std::cout << "摄像头当前帧率: " << fps << " FPS" << std::endl;
+    Mat frame;
+    cap.read(frame);
 
+    if (frame.empty()) {
+        cerr << "Error reading frame" << endl;
+        return Mat();  // 返回空的Mat对象
+    }
+    
+    return frame.clone();  // 返回帧的副本以确保数据安全
+}
 
-    Mat frame, gray, binary, morph;
+/*
+函数名称：void Cam_Address()
+功能说明：opencv二值化
+example:Cam_Address()
+*/
+void Cam_Address(Mat frame)
+{
+    // VideoCapture cap(0);
+    // if (!cap.isOpened())
+    // {
+    //     cerr << "Error opening video stream" << endl;
+    //     return;
+    // }
 
-    // 定义 3x3 结构元素
-	//形态学滤波（膨胀与腐蚀）
-    Mat kernel = getStructuringElement(MORPH_RECT, Size(3, 3));
+    // // 设置摄像头参数
+    // cap.set(CAP_PROP_FRAME_WIDTH, image_w);
+    // cap.set(CAP_PROP_FRAME_HEIGHT, image_h);
+    // cap.set(CAP_PROP_FPS, 60);
+	// double fps = cap.get(CAP_PROP_FPS);  // 读取摄像头实际帧率
 
-    while (true)
-    {
-        cap.read(frame);
-        if (frame.empty())
-        {
-            cerr << "Error reading frame" << endl;
-            break;
-        }
+    // cout << "摄像头当前帧率: " << fps << " FPS" << endl;
 
+    // Mat frame, gray, binary, morph;
+
+    // // 定义 3x3 结构元素
+	// //形态学滤波（膨胀与腐蚀）
+    // // Mat kernel = getStructuringElement(MORPH_RECT, Size(3, 3));
+
+    // while (true)
+    // {
+    //     cap.read(frame);
+	// 	//imshow("frame", frame);
+	// 	// cv::waitkey(0);
+
+    //     if (frame.empty())
+    //     {
+    //         cerr << "Error reading frame" << endl;
+    //         break;
+    //     }
+		Mat gray, binary, morph;
         // 转灰度
         cvtColor(frame, gray, COLOR_BGR2GRAY);
-
+		gray.convertTo(gray, -1, 1.5, 50); // alpha=1.5（对比度）, beta=50（亮度）
         // 二值化
-        //threshold(gray, binary, 127, 255, THRESH_BINARY | THRESH_OTSU);
-		adaptiveThreshold(gray, binary, 255, ADAPTIVE_THRESH_GAUSSIAN_C, THRESH_BINARY, 7, 2);
+        threshold(gray, binary, 75, 255, THRESH_BINARY | THRESH_OTSU);
+		//adaptiveThreshold(gray, binary, 255, ADAPTIVE_THRESH_GAUSSIAN_C, THRESH_BINARY, 7, 2);
 		printf("二值化完成\n");
 
 		// 形态学处理：先腐蚀再膨胀（开运算）
-        erode(binary, morph, kernel);
-        dilate(morph, morph, kernel);
+        // erode(binary, morph, kernel);
+        // dilate(morph, morph, kernel);
 
         // 将 OpenCV Mat 转换为 C 数组
-        for (int i = 0; i < image_h; i++)
+        // for (int i = 0; i < image_h; i++)
+        // {
+        //     for (int j = 0; j < image_w; j++)
+        //     {
+        //         bin_image[i][j] = morph.at<uchar>(i, j) > 0 ? 1 : 0; // 0/1 表示黑白
+        //     }
+        // }
+	for (int i = 0; i < image_h; i++)
         {
             for (int j = 0; j < image_w; j++)
             {
-                bin_image[i][j] = morph.at<uchar>(i, j) > 0 ? 1 : 0; // 0/1 表示黑白
+                bin_image[i][j] = (binary.at<uchar>(i, j) > 0) ? 1 : 0; // 0: 黑, 1: 白
             }
         }
-
         //这里可以选择调试打印
         // for (int i = 0; i < image_h; i += 2) {
         //     for (int j = 0; j < image_w; j += 2) {
@@ -439,27 +480,26 @@ void Cam_Address()
         //     printf("\n");
         // }
 
-        break; // 只读取一帧就返回
-    }
+        //break; // 只读取一帧就返回
+    //}
 
-    cap.release();
+    //cap.release();
 }
 
 /*
 TFT屏幕：展示八临域代码的边线与中线
 */
-void TFT3lmr(){
-    TFTSPI_Init(0); // LCD初始化    0：横屏     1：竖屏
-    cout << "TFTSPI_Init" << endl;
-
-}
+// void TFT3lmr(){
+//     TFTSPI_Init(0); // LCD初始化    0：横屏     1：竖屏
+//     cout << "TFTSPI_Init" << endl;
+// }
 /*
 函数名称：void image_process(void)
 功能说明：最终处理函数
 参数说明：无
 example： image_process();
  */
-double image_process(void)
+double image_process(Mat frame)
 {
 uint16 i;
 uint8 hightest = 0;//定义一个最高行，tip：这里的最高指的是y值的最小
@@ -467,16 +507,25 @@ double error = 0;
 double sum_error = 0;
 double avg_error = 0;
 int count = 0;
-// /*这是离线调试用的*/
+// /*这是离线调试用的（总钻风）*/
 // Get_image(mt9v03x_image);
 // turn_to_bin();
 // /*提取赛道边界*/
 // image_filter(bin_image);//滤波
-Cam_Address();
+Cam_Address(frame);
 image_draw_rectan(bin_image);//预处理
 //清零
 data_stastics_l = 0;
 data_stastics_r = 0;
+///////////////////////////////////////TFT屏幕显示二值化图像///////////////////////////////////////////
+TFTSPI_Init(0); // LCD初始化    0：横屏     1：竖屏
+cout << "TFTSPI_Init" << endl;
+//1.新TFT调用显示二值化
+uint8_t *tft_buffer = (uint8_t *)malloc(image_w * image_h * 2);
+BinToTFTFormat((uint8_t*)bin_image, image_w, image_h, tft_buffer);
+TFTSPI_Show_Pic2(0, 0, image_w, image_h, tft_buffer);
+free(tft_buffer);
+////////////////////////////////////////////////////////////////////////////////////////////////////////
 if (get_start_point(image_h - 2))//找到起点了，再执行八领域，没找到就一直找
 {
 	printf("正在开始八领域\n");
@@ -491,11 +540,25 @@ if (get_start_point(image_h - 2))//找到起点了，再执行八领域，没找
 else{
 	printf("没有进入八领域\n");
 }
-	// 计算赛道中线 center_line[i] 及误差 error
+
+///////////////////////////////////////2.TFT显示左右边界点//////////////////////////////////////
+// for (i = 0; i < data_stastics_l; i++) {
+//     TFTSPI_Draw_Dot(points_l[i][0] + 2, points_l[i][1], u16BLUE);
+// }
+// for (i = 0; i < data_stastics_r; i++) {
+//     TFTSPI_Draw_Dot(points_r[i][0] - 2, points_r[i][1], u16RED);
+// }
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+	//计算赛道中线 center_line[i] 及误差 error
     for (i = hightest; i < image_h - 1; i++)
     {
         center_line[i] = (l_border[i] + r_border[i]) >> 1; // 求中线
-        
+
+    // TFTSPI_Draw_Dot(center_line[i], i, u16GREEN);// 画中线（绿色）
+    // TFTSPI_Draw_Dot(l_border[i], i, u16BLUE);// 画左边线（蓝色）
+    // TFTSPI_Draw_Dot(r_border[i], i, u16RED);// 画右边线（红色）
+
         // 计算误差 error
         if (i >= (image_h * 2.0 / 3.0)) // 只计算 image_h * 2/3 到 image_h 之间的误差
         {
@@ -503,9 +566,7 @@ else{
             sum_error += error;
             count++;
         }
-    }
-    //TFT屏幕显示
-
+	}
     // 计算平均误差
     if (count > 0)
     {
@@ -516,12 +577,6 @@ else{
     printf("图像处理完成！error: %.2f\n", avg_error);
 	return avg_error;
 }
-
-
-
-
-
-
 
 
 // //显示图像   改成你自己的就行 等后期足够自信了，显示关掉，显示屏挺占资源的

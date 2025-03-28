@@ -1,3 +1,6 @@
+#include "main.hpp"
+#include "TFT.hpp"
+
 //数据类型声明（方便移植——移植的时候可以删掉，改成你自己的） 
 typedef   signed          char int8;
 typedef   signed short     int int16;
@@ -11,7 +14,8 @@ typedef unsigned           int uint32;
 #define white_pixel	255
 #define black_pixel	0
 
-#define border_max	image_w-2 //图像宽边界最大值
-#define border_min	1	//图像宽边界最小值	
+#define border_max	image_w-5 //图像宽边界最大值
+#define border_min	5	//图像宽边界最小值	
 
-extern double image_process(void);
+double image_process(Mat frame);
+Mat capture_frame();

@@ -94,5 +94,5 @@ void TFTSPI_Road( unsigned char wide_start, unsigned char high_start,unsigned ch
 void TFTSPI_BinRoad( u8 wide_start, u8 high_start, u8 high, u8 wide, u8 *Pixle);
 /* 功能测试 */
 void Test_TFT18(void);
-
+void BinToTFTFormat(uint8_t *bin_image,int width,int height,uint8_t *tft_buffer);
 #endif

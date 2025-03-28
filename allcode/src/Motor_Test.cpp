@@ -35,8 +35,8 @@ void MotorRun(){
     HWGpio LMotoDir(74, GPIO_Mode_Out); // CAN3_RX  left motor dir
     HWGpio RMotoDir(75, GPIO_Mode_Out); // CAN3_TX  right motor dir
     // 设置占空比
-    LMotorPWM.SetDutyCycle(7500);
-    RMotorPWM.SetDutyCycle(7500);
+    LMotorPWM.SetDutyCycle(10000);
+    RMotorPWM.SetDutyCycle(10000);
     // 使能
     LMotorPWM.Enable();
     RMotorPWM.Enable();

@@ -1,6 +1,10 @@
 {
     "files.associations": {
         "iostream": "cpp",
-        "thread": "cpp"
+        "thread": "cpp",
+        "atomic": "cpp",
+        "chrono": "cpp",
+        "array": "cpp",
+        "string_view": "cpp"
     }
 }

@@ -1168,8 +1168,6 @@ void TFTSPI_P16x16Str(unsigned char x, unsigned char y, unsigned char *s_dat, un
  * @param    ppic ：图片数据
  * @return   无
  * @note     起始、终止横坐标(0-127)，纵坐标(0-159),显示颜色uint16
- * @see
- * @date     2019/6/13 星期四
  */
 void TFTSPI_Show_Pic2(unsigned char xs, unsigned char ys, unsigned char w, unsigned char h, const unsigned char *ppic)
 {
@@ -1179,7 +1177,29 @@ void TFTSPI_Show_Pic2(unsigned char xs, unsigned char ys, unsigned char w, unsig
         TFTSPI_Write_Word((ppic[2 * i] << 8) + (ppic[2 * i + 1])); // 高位在前，且两个数据组合成一个16位数据表示像素值
 }
 
-/*!
+/**
+ * @brief 使用联合体实现二值图像转换
+ * @param bin_image 输入的二值图像数组（uint8_t[height][width]）
+ * @param width     图像宽度
+ * @param height    图像高度
+ * @param tft_buffer 输出的RGB565缓冲区
+ */
+void BinToTFTFormat(uint8_t *bin_image,int width,int height,uint8_t *tft_buffer) {
+    union {
+        uint16_t color;
+        uint8_t bytes[2];
+    } converter;
+
+    for (int y = 0; y < height; y++) {
+        for (int x = 0; x < width; x++) {
+            converter.color = bin_image[y * width + x] ? 0xFFFF : 0x0000;
+            *tft_buffer++ = converter.bytes[1]; // 高位在前
+            *tft_buffer++ = converter.bytes[0];
+        }
+    }
+}
+
+/*
  * @brief    TFT18屏 unsigned char 灰度数据显示
  * @param    high_start ： 显示图像开始位置
  * @param    wide_start ： 显示图像开始位置

@@ -18,6 +18,12 @@
 #include <sys/shm.h>    // 共享内存
 #include <sys/sem.h>    // 信号量集
 
+#include <atomic>    // 添加atomic头文件
+#include <mutex>     // 添加mutex头文件
+#include <sched.h>
+#include <thread>
+#include <chrono>
+
 #include <opencv2/opencv.hpp>
 
 

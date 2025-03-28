@@ -1,41 +1,100 @@
 #include "main.hpp"
 #include "image.hpp"
-#include <thread>
 #include "pwm.hpp"
 
-void MotorRunthread(){
+mutex frame_mutex;
+mutex error_mutex;
+double current_error = 0;
+Mat current_frame;
+// 设置线程优先级和调度策略
+void SetThreadPriority(pthread_t thread_id, int policy, int priority) {
+    sched_param sch_params;
+    sch_params.sched_priority = priority;
+    if (pthread_setschedparam(thread_id, policy, &sch_params)) {
+        cerr << "Failed to set thread priority (需要root权限或CAP_SYS_NICE能力)" << endl;
+    }
+}
+
+// 电机控制线程（低优先级）
+void MotorRunThread() {
+    pthread_t this_thread = pthread_self();
+    SetThreadPriority(this_thread, SCHED_OTHER, 0);  // 默认策略，优先级最低
+
     while (true) {
         MotorRun();
-        this_thread::sleep_for(chrono::milliseconds(20)); // 模拟电机运行
+        this_thread::sleep_for(chrono::milliseconds(20));
     }
 }
 
-double image_processthread() {
-    double error = image_process(); // 调用 image_process 并获取返回值
-    //this_thread::sleep_for(chrono::milliseconds(10)); // 模拟图像处理
-    return error; // 返回 image_process 的返回值
+// 图像处理线程（中低优先级）
+void ImageProcessThread() {
+    pthread_t this_thread = pthread_self();
+    SetThreadPriority(this_thread, SCHED_RR, 50);  // 中等优先级
 
-}
-
-void ServoRunthread(double error) {
-    ServoRun(error);
-    //ServoTest1();
-    //cout << "Servo running with error: " << error << endl;
-    //this_thread::sleep_for(chrono::milliseconds(100)); // 模拟舵机控制
-}
-
-void Motion(){
-    double error = 0;
-    // 创建一个线程运行 MotorRun
-    thread motorThread(MotorRunthread);
-    while(1)
+    Mat frame;
     {
-    error = image_processthread();
-    ServoRunthread(error);
-    //ServoRunthread(30);
+    lock_guard<mutex> lock(frame_mutex);
+    if (!current_frame.empty()) {
+        frame = current_frame.clone();}
     }
-    
-    //等待电机线程结束（通常不会执行到这里）
-    motorThread.join();
+    if (!frame.empty()) {
+        double error = image_process(current_frame);  // 图像处理
+        {
+            lock_guard<mutex> lock(error_mutex);
+            current_error = error;
+        }
 
+        this_thread::sleep_for(chrono::milliseconds(10));
+    }
+}
+
+// 舵机控制线程（高优先级）
+void ServoControlThread() {
+    pthread_t this_thread = pthread_self();
+    SetThreadPriority(this_thread, SCHED_FIFO, 80);  // 高优先级，实时调度
+
+    while (true) {
+        double error;
+        {
+            lock_guard<mutex> lock(error_mutex);
+            error = current_error;
+        }
+
+        ServoRun(error);  // 舵机控制
+        this_thread::sleep_for(chrono::milliseconds(10));  // 更高频率（可选）
+    }
+}
+
+// 摄像头采集线程（最高优先级）
+void CameraCaptureThread() {
+    pthread_t this_thread = pthread_self();
+    SetThreadPriority(this_thread, SCHED_FIFO, 99);  // 最高优先级
+
+    while (true) {
+        Mat frame = capture_frame();  // 假设的摄像头采集函数
+        if(!frame.empty()){
+            lock_guard<mutex> lock(frame_mutex);  // 加锁
+            current_frame = frame;
+        }
+        //process_frame(frame);         // 传递给图像处理（需同步）
+        this_thread::sleep_for(chrono::milliseconds(5));  // 高频率采集
+    }
+}
+
+void Motion() {
+    thread motor_thread(MotorRunThread);
+    thread image_thread(ImageProcessThread);
+    thread servo_thread(ServoControlThread);
+    thread camera_thread(CameraCaptureThread);
+
+    // 主线程监控（可选）
+    while (true) {
+        this_thread::sleep_for(chrono::seconds(1));
+    }
+
+    // 安全退出（实际需添加信号处理）
+    motor_thread.join();
+    image_thread.join();
+    servo_thread.join();
+    camera_thread.join();
 }
