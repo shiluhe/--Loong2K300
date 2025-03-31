@@ -13,9 +13,9 @@ int main()
     // GpioOutputTest2(88);    // GPIO输出功能(硬件)
     // GpioInputTest1();       // GPIO输入功能(设备文件)
     // GpioInputTest2();       // GPIO输入功能(硬件)
-    //PwmDevTest();           // PWM 测试(设备文件)
+    // PwmDevTest();           // PWM 测试(设备文件)
     // PwmHWTest();            // PWM 测试(寄存器)
-    GtimPwmTest();          // Gtim PWM 测试(硬件)
+    //GtimPwmTest();          // Gtim PWM 测试(硬件)
     // EncoderTest();          // 编码器测试(寄存器)
     //CameraTest();           // 摄像头测试
     // AdcFunTest();           // ADC 功能测试
@@ -28,8 +28,9 @@ int main()
     //MotorTest();            // 电机测试程序
     //ServoTest();            // 舵机测试程序
     // GpioTest();             // 久久派22个GPIO翻转测试
-    //BeepOff();
-    //Motion();
+    BeepOff();
+    Motion1();
+
 
     while (1)
     {

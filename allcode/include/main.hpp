@@ -39,3 +39,4 @@ void ServoRun(double error);
 void ServoTest1();
 void CameraTest();
 void Motion();
+void Motion1();

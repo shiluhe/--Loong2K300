@@ -22,7 +22,6 @@ void MotorRunThread() {
 
     while (true) {
         MotorRun();
-        this_thread::sleep_for(chrono::milliseconds(20));
     }
 }
 
@@ -38,13 +37,11 @@ void ImageProcessThread() {
         frame = current_frame.clone();}
     }
     if (!frame.empty()) {
-        double error = image_process(current_frame);  // 图像处理
+        double error = image_process(frame);  // 图像处理
         {
             lock_guard<mutex> lock(error_mutex);
             current_error = error;
         }
-
-        this_thread::sleep_for(chrono::milliseconds(10));
     }
 }
 
@@ -54,15 +51,16 @@ void ServoControlThread() {
     SetThreadPriority(this_thread, SCHED_FIFO, 80);  // 高优先级，实时调度
 
     while (true) {
-        double error;
+        double error = 0;
         {
             lock_guard<mutex> lock(error_mutex);
             error = current_error;
         }
-
+        printf("Current error: %.3f\n", error);  // 保留3位小数
+        //ServoRun(0); 
         ServoRun(error);  // 舵机控制
-        this_thread::sleep_for(chrono::milliseconds(10));  // 更高频率（可选）
     }
+    //ServoRun(0);  // 舵机控制
 }
 
 // 摄像头采集线程（最高优先级）
@@ -77,7 +75,6 @@ void CameraCaptureThread() {
             current_frame = frame;
         }
         //process_frame(frame);         // 传递给图像处理（需同步）
-        this_thread::sleep_for(chrono::milliseconds(5));  // 高频率采集
     }
 }
 
@@ -97,4 +94,20 @@ void Motion() {
     image_thread.join();
     servo_thread.join();
     camera_thread.join();
+
+}
+
+void Motion1(){
+    while(1){
+        auto start = std::chrono::high_resolution_clock::now();  // 记录起始时间
+        MotorRun();
+
+        Mat frame = capture_frame();  // 假设的摄像头采集函数
+        double error = image_process(frame);  // 图像处理
+        ServoRun(error);  // 舵机控制
+
+        auto end = std::chrono::high_resolution_clock::now();  // 记录结束时间
+        chrono::duration<double> elapsed = end - start;  // 计算耗时
+        cout << "Loop time: " << elapsed.count() << " seconds" << endl;
+    }
 }

@@ -51,10 +51,11 @@ void ServoTest1(){
     ServoPWM1.SetDutyCycle(170000);
 }
 
+GtimPwm ServoPWM1(88, 2, LS_GTIM_INVERSED, 2000000 - 1); // TIM2_CH2 GPIO88
+PID pid(3,0.01,0.5);
 void ServoRun(double error){
-    PID pid(3,0.01,0.5);
     double output = pid.calculate(error);
-    GtimPwm ServoPWM1(88, 2, LS_GTIM_INVERSED, 2000000 - 1); // TIM2_CH2 GPIO88
+    //GtimPwm ServoPWM1(88, 2, LS_GTIM_INVERSED, 2000000 - 1); // TIM2_CH2 GPIO88
     //GtimPwm ServoPWM2(89, 3, LS_GTIM_INVERSED, 2000000 - 1); // TIM2_CH3 GPIO89
     ServoPWM1.Enable();
     //ServoPWM2.Enable();
@@ -66,7 +67,7 @@ void ServoRun(double error){
 */
 //舵机角度约束
     double anglecontrol = 0;
-    anglecontrol = 170000 - output * 50;
+    anglecontrol = 170000 - output * 30;
     if(anglecontrol > 180000){
         anglecontrol = 180000;
     }
@@ -76,6 +77,6 @@ void ServoRun(double error){
     //ServoPWM1.SetDutyCycle(160000);
     ServoPWM1.SetDutyCycle(anglecontrol);
     printf("anglecontrol = %.2f\n" , anglecontrol);
-    printf("output = %.2f\n" , output);
+    //printf("output = %.2f\n" , output);
 
 }

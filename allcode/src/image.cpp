@@ -518,13 +518,13 @@ image_draw_rectan(bin_image);//预处理
 data_stastics_l = 0;
 data_stastics_r = 0;
 ///////////////////////////////////////TFT屏幕显示二值化图像///////////////////////////////////////////
-TFTSPI_Init(0); // LCD初始化    0：横屏     1：竖屏
-cout << "TFTSPI_Init" << endl;
-//1.新TFT调用显示二值化
-uint8_t *tft_buffer = (uint8_t *)malloc(image_w * image_h * 2);
-BinToTFTFormat((uint8_t*)bin_image, image_w, image_h, tft_buffer);
-TFTSPI_Show_Pic2(0, 0, image_w, image_h, tft_buffer);
-free(tft_buffer);
+// TFTSPI_Init(0); // LCD初始化    0：横屏     1：竖屏
+// cout << "TFTSPI_Init" << endl;
+// //1.新TFT调用显示二值化
+// uint8_t *tft_buffer = (uint8_t *)malloc(image_w * image_h * 2);
+// BinToTFTFormat((uint8_t*)bin_image, image_w, image_h, tft_buffer);
+// TFTSPI_Show_Pic2(0, 0, image_w, image_h, tft_buffer);
+// free(tft_buffer);
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 if (get_start_point(image_h - 2))//找到起点了，再执行八领域，没找到就一直找
 {
