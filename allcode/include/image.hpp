@@ -11,10 +11,12 @@ typedef unsigned           int uint32;
 
 #define image_h 120 //height
 #define image_w 160 //width
+
+
 #define white_pixel	255
 #define black_pixel	0
 
-#define border_max	image_w-5 //图像宽边界最大值
+#define border_max	image_w-2 //图像宽边界最大值
 #define border_min	5	//图像宽边界最小值	
 
 double image_process(Mat frame);

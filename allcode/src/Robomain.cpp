@@ -105,7 +105,7 @@ void Motion1(){
         Mat frame = capture_frame();  // 假设的摄像头采集函数
         double error = image_process(frame);  // 图像处理
         ServoRun(error);  // 舵机控制
-
+        //ServoRun(0);
         auto end = std::chrono::high_resolution_clock::now();  // 记录结束时间
         chrono::duration<double> elapsed = end - start;  // 计算耗时
         cout << "Loop time: " << elapsed.count() << " seconds" << endl;
