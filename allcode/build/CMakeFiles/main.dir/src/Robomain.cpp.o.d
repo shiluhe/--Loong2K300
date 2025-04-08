@@ -485,4 +485,8 @@ CMakeFiles/main.dir/src/Robomain.cpp.o: \
  /opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/loongarch64-linux-gnu/sysroot/usr/include/bits/statx.h \
  /mnt/hgfs/ubuntu-shareddoc/code/allcode/include/MAP_ADDR.hpp \
  /mnt/hgfs/ubuntu-shareddoc/code/allcode/include/HW_SPI.hpp \
+ /mnt/hgfs/ubuntu-shareddoc/code/allcode/include/Servo.hpp \
+ /mnt/hgfs/ubuntu-shareddoc/code/allcode/include/gtim_pwm.hpp \
+ /mnt/hgfs/ubuntu-shareddoc/code/allcode/include/pid.hpp \
+ /mnt/hgfs/ubuntu-shareddoc/code/allcode/include/Motor.hpp \
  /mnt/hgfs/ubuntu-shareddoc/code/allcode/include/pwm.hpp

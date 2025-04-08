@@ -31,12 +31,5 @@
 using namespace cv;
 using namespace std;
 
-void MotorTest();
-void MotorRun();
-void BeepOff();
-void ServoTest();
-void ServoRun(double error);
-void ServoTest1();
-void CameraTest();
-void Motion();
+
 void Motion1();

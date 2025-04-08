@@ -129,173 +129,389 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-src/Cam_Test.o: src/Cam_Test.cpp.o
-.PHONY : src/Cam_Test.o
+LibraryAndTest/Cam_Test.o: LibraryAndTest/Cam_Test.cpp.o
+.PHONY : LibraryAndTest/Cam_Test.o
 
 # target to build an object file
-src/Cam_Test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Cam_Test.cpp.o
-.PHONY : src/Cam_Test.cpp.o
+LibraryAndTest/Cam_Test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/Cam_Test.cpp.o
+.PHONY : LibraryAndTest/Cam_Test.cpp.o
 
-src/Cam_Test.i: src/Cam_Test.cpp.i
-.PHONY : src/Cam_Test.i
+LibraryAndTest/Cam_Test.i: LibraryAndTest/Cam_Test.cpp.i
+.PHONY : LibraryAndTest/Cam_Test.i
 
 # target to preprocess a source file
-src/Cam_Test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Cam_Test.cpp.i
-.PHONY : src/Cam_Test.cpp.i
+LibraryAndTest/Cam_Test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/Cam_Test.cpp.i
+.PHONY : LibraryAndTest/Cam_Test.cpp.i
 
-src/Cam_Test.s: src/Cam_Test.cpp.s
-.PHONY : src/Cam_Test.s
+LibraryAndTest/Cam_Test.s: LibraryAndTest/Cam_Test.cpp.s
+.PHONY : LibraryAndTest/Cam_Test.s
 
 # target to generate assembly for a file
-src/Cam_Test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Cam_Test.cpp.s
-.PHONY : src/Cam_Test.cpp.s
+LibraryAndTest/Cam_Test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/Cam_Test.cpp.s
+.PHONY : LibraryAndTest/Cam_Test.cpp.s
 
-src/GPIO_Test.o: src/GPIO_Test.cpp.o
-.PHONY : src/GPIO_Test.o
+LibraryAndTest/GPIO_Test.o: LibraryAndTest/GPIO_Test.cpp.o
+.PHONY : LibraryAndTest/GPIO_Test.o
 
 # target to build an object file
-src/GPIO_Test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/GPIO_Test.cpp.o
-.PHONY : src/GPIO_Test.cpp.o
+LibraryAndTest/GPIO_Test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/GPIO_Test.cpp.o
+.PHONY : LibraryAndTest/GPIO_Test.cpp.o
 
-src/GPIO_Test.i: src/GPIO_Test.cpp.i
-.PHONY : src/GPIO_Test.i
+LibraryAndTest/GPIO_Test.i: LibraryAndTest/GPIO_Test.cpp.i
+.PHONY : LibraryAndTest/GPIO_Test.i
 
 # target to preprocess a source file
-src/GPIO_Test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/GPIO_Test.cpp.i
-.PHONY : src/GPIO_Test.cpp.i
+LibraryAndTest/GPIO_Test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/GPIO_Test.cpp.i
+.PHONY : LibraryAndTest/GPIO_Test.cpp.i
 
-src/GPIO_Test.s: src/GPIO_Test.cpp.s
-.PHONY : src/GPIO_Test.s
+LibraryAndTest/GPIO_Test.s: LibraryAndTest/GPIO_Test.cpp.s
+.PHONY : LibraryAndTest/GPIO_Test.s
 
 # target to generate assembly for a file
-src/GPIO_Test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/GPIO_Test.cpp.s
-.PHONY : src/GPIO_Test.cpp.s
+LibraryAndTest/GPIO_Test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/GPIO_Test.cpp.s
+.PHONY : LibraryAndTest/GPIO_Test.cpp.s
 
-src/HW_SPI.o: src/HW_SPI.cpp.o
-.PHONY : src/HW_SPI.o
+LibraryAndTest/HW_SPI.o: LibraryAndTest/HW_SPI.cpp.o
+.PHONY : LibraryAndTest/HW_SPI.o
 
 # target to build an object file
-src/HW_SPI.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/HW_SPI.cpp.o
-.PHONY : src/HW_SPI.cpp.o
+LibraryAndTest/HW_SPI.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/HW_SPI.cpp.o
+.PHONY : LibraryAndTest/HW_SPI.cpp.o
 
-src/HW_SPI.i: src/HW_SPI.cpp.i
-.PHONY : src/HW_SPI.i
+LibraryAndTest/HW_SPI.i: LibraryAndTest/HW_SPI.cpp.i
+.PHONY : LibraryAndTest/HW_SPI.i
 
 # target to preprocess a source file
-src/HW_SPI.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/HW_SPI.cpp.i
-.PHONY : src/HW_SPI.cpp.i
+LibraryAndTest/HW_SPI.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/HW_SPI.cpp.i
+.PHONY : LibraryAndTest/HW_SPI.cpp.i
 
-src/HW_SPI.s: src/HW_SPI.cpp.s
-.PHONY : src/HW_SPI.s
+LibraryAndTest/HW_SPI.s: LibraryAndTest/HW_SPI.cpp.s
+.PHONY : LibraryAndTest/HW_SPI.s
 
 # target to generate assembly for a file
-src/HW_SPI.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/HW_SPI.cpp.s
-.PHONY : src/HW_SPI.cpp.s
+LibraryAndTest/HW_SPI.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/HW_SPI.cpp.s
+.PHONY : LibraryAndTest/HW_SPI.cpp.s
 
-src/HW_gpio.o: src/HW_gpio.cpp.o
-.PHONY : src/HW_gpio.o
+LibraryAndTest/HW_gpio.o: LibraryAndTest/HW_gpio.cpp.o
+.PHONY : LibraryAndTest/HW_gpio.o
 
 # target to build an object file
-src/HW_gpio.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/HW_gpio.cpp.o
-.PHONY : src/HW_gpio.cpp.o
+LibraryAndTest/HW_gpio.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/HW_gpio.cpp.o
+.PHONY : LibraryAndTest/HW_gpio.cpp.o
 
-src/HW_gpio.i: src/HW_gpio.cpp.i
-.PHONY : src/HW_gpio.i
+LibraryAndTest/HW_gpio.i: LibraryAndTest/HW_gpio.cpp.i
+.PHONY : LibraryAndTest/HW_gpio.i
 
 # target to preprocess a source file
-src/HW_gpio.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/HW_gpio.cpp.i
-.PHONY : src/HW_gpio.cpp.i
+LibraryAndTest/HW_gpio.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/HW_gpio.cpp.i
+.PHONY : LibraryAndTest/HW_gpio.cpp.i
 
-src/HW_gpio.s: src/HW_gpio.cpp.s
-.PHONY : src/HW_gpio.s
+LibraryAndTest/HW_gpio.s: LibraryAndTest/HW_gpio.cpp.s
+.PHONY : LibraryAndTest/HW_gpio.s
 
 # target to generate assembly for a file
-src/HW_gpio.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/HW_gpio.cpp.s
-.PHONY : src/HW_gpio.cpp.s
+LibraryAndTest/HW_gpio.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/HW_gpio.cpp.s
+.PHONY : LibraryAndTest/HW_gpio.cpp.s
 
-src/MAP_ADDR.o: src/MAP_ADDR.cpp.o
-.PHONY : src/MAP_ADDR.o
+LibraryAndTest/MAP_ADDR.o: LibraryAndTest/MAP_ADDR.cpp.o
+.PHONY : LibraryAndTest/MAP_ADDR.o
 
 # target to build an object file
-src/MAP_ADDR.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/MAP_ADDR.cpp.o
-.PHONY : src/MAP_ADDR.cpp.o
+LibraryAndTest/MAP_ADDR.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/MAP_ADDR.cpp.o
+.PHONY : LibraryAndTest/MAP_ADDR.cpp.o
 
-src/MAP_ADDR.i: src/MAP_ADDR.cpp.i
-.PHONY : src/MAP_ADDR.i
+LibraryAndTest/MAP_ADDR.i: LibraryAndTest/MAP_ADDR.cpp.i
+.PHONY : LibraryAndTest/MAP_ADDR.i
 
 # target to preprocess a source file
-src/MAP_ADDR.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/MAP_ADDR.cpp.i
-.PHONY : src/MAP_ADDR.cpp.i
+LibraryAndTest/MAP_ADDR.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/MAP_ADDR.cpp.i
+.PHONY : LibraryAndTest/MAP_ADDR.cpp.i
 
-src/MAP_ADDR.s: src/MAP_ADDR.cpp.s
-.PHONY : src/MAP_ADDR.s
+LibraryAndTest/MAP_ADDR.s: LibraryAndTest/MAP_ADDR.cpp.s
+.PHONY : LibraryAndTest/MAP_ADDR.s
 
 # target to generate assembly for a file
-src/MAP_ADDR.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/MAP_ADDR.cpp.s
-.PHONY : src/MAP_ADDR.cpp.s
+LibraryAndTest/MAP_ADDR.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/MAP_ADDR.cpp.s
+.PHONY : LibraryAndTest/MAP_ADDR.cpp.s
 
-src/Motor_Test.o: src/Motor_Test.cpp.o
-.PHONY : src/Motor_Test.o
+LibraryAndTest/Motor_Test.o: LibraryAndTest/Motor_Test.cpp.o
+.PHONY : LibraryAndTest/Motor_Test.o
 
 # target to build an object file
-src/Motor_Test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Motor_Test.cpp.o
-.PHONY : src/Motor_Test.cpp.o
+LibraryAndTest/Motor_Test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/Motor_Test.cpp.o
+.PHONY : LibraryAndTest/Motor_Test.cpp.o
 
-src/Motor_Test.i: src/Motor_Test.cpp.i
-.PHONY : src/Motor_Test.i
+LibraryAndTest/Motor_Test.i: LibraryAndTest/Motor_Test.cpp.i
+.PHONY : LibraryAndTest/Motor_Test.i
 
 # target to preprocess a source file
-src/Motor_Test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Motor_Test.cpp.i
-.PHONY : src/Motor_Test.cpp.i
+LibraryAndTest/Motor_Test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/Motor_Test.cpp.i
+.PHONY : LibraryAndTest/Motor_Test.cpp.i
 
-src/Motor_Test.s: src/Motor_Test.cpp.s
-.PHONY : src/Motor_Test.s
+LibraryAndTest/Motor_Test.s: LibraryAndTest/Motor_Test.cpp.s
+.PHONY : LibraryAndTest/Motor_Test.s
 
 # target to generate assembly for a file
-src/Motor_Test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Motor_Test.cpp.s
-.PHONY : src/Motor_Test.cpp.s
+LibraryAndTest/Motor_Test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/Motor_Test.cpp.s
+.PHONY : LibraryAndTest/Motor_Test.cpp.s
 
-src/Pwm_Test.o: src/Pwm_Test.cpp.o
-.PHONY : src/Pwm_Test.o
+LibraryAndTest/Pwm_Test.o: LibraryAndTest/Pwm_Test.cpp.o
+.PHONY : LibraryAndTest/Pwm_Test.o
 
 # target to build an object file
-src/Pwm_Test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Pwm_Test.cpp.o
-.PHONY : src/Pwm_Test.cpp.o
+LibraryAndTest/Pwm_Test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/Pwm_Test.cpp.o
+.PHONY : LibraryAndTest/Pwm_Test.cpp.o
 
-src/Pwm_Test.i: src/Pwm_Test.cpp.i
-.PHONY : src/Pwm_Test.i
+LibraryAndTest/Pwm_Test.i: LibraryAndTest/Pwm_Test.cpp.i
+.PHONY : LibraryAndTest/Pwm_Test.i
 
 # target to preprocess a source file
-src/Pwm_Test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Pwm_Test.cpp.i
-.PHONY : src/Pwm_Test.cpp.i
+LibraryAndTest/Pwm_Test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/Pwm_Test.cpp.i
+.PHONY : LibraryAndTest/Pwm_Test.cpp.i
 
-src/Pwm_Test.s: src/Pwm_Test.cpp.s
-.PHONY : src/Pwm_Test.s
+LibraryAndTest/Pwm_Test.s: LibraryAndTest/Pwm_Test.cpp.s
+.PHONY : LibraryAndTest/Pwm_Test.s
 
 # target to generate assembly for a file
-src/Pwm_Test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Pwm_Test.cpp.s
-.PHONY : src/Pwm_Test.cpp.s
+LibraryAndTest/Pwm_Test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/Pwm_Test.cpp.s
+.PHONY : LibraryAndTest/Pwm_Test.cpp.s
+
+LibraryAndTest/Servo_Test.o: LibraryAndTest/Servo_Test.cpp.o
+.PHONY : LibraryAndTest/Servo_Test.o
+
+# target to build an object file
+LibraryAndTest/Servo_Test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/Servo_Test.cpp.o
+.PHONY : LibraryAndTest/Servo_Test.cpp.o
+
+LibraryAndTest/Servo_Test.i: LibraryAndTest/Servo_Test.cpp.i
+.PHONY : LibraryAndTest/Servo_Test.i
+
+# target to preprocess a source file
+LibraryAndTest/Servo_Test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/Servo_Test.cpp.i
+.PHONY : LibraryAndTest/Servo_Test.cpp.i
+
+LibraryAndTest/Servo_Test.s: LibraryAndTest/Servo_Test.cpp.s
+.PHONY : LibraryAndTest/Servo_Test.s
+
+# target to generate assembly for a file
+LibraryAndTest/Servo_Test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/Servo_Test.cpp.s
+.PHONY : LibraryAndTest/Servo_Test.cpp.s
+
+LibraryAndTest/TFT.o: LibraryAndTest/TFT.cpp.o
+.PHONY : LibraryAndTest/TFT.o
+
+# target to build an object file
+LibraryAndTest/TFT.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/TFT.cpp.o
+.PHONY : LibraryAndTest/TFT.cpp.o
+
+LibraryAndTest/TFT.i: LibraryAndTest/TFT.cpp.i
+.PHONY : LibraryAndTest/TFT.i
+
+# target to preprocess a source file
+LibraryAndTest/TFT.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/TFT.cpp.i
+.PHONY : LibraryAndTest/TFT.cpp.i
+
+LibraryAndTest/TFT.s: LibraryAndTest/TFT.cpp.s
+.PHONY : LibraryAndTest/TFT.s
+
+# target to generate assembly for a file
+LibraryAndTest/TFT.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/TFT.cpp.s
+.PHONY : LibraryAndTest/TFT.cpp.s
+
+LibraryAndTest/TFT_Test.o: LibraryAndTest/TFT_Test.cpp.o
+.PHONY : LibraryAndTest/TFT_Test.o
+
+# target to build an object file
+LibraryAndTest/TFT_Test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/TFT_Test.cpp.o
+.PHONY : LibraryAndTest/TFT_Test.cpp.o
+
+LibraryAndTest/TFT_Test.i: LibraryAndTest/TFT_Test.cpp.i
+.PHONY : LibraryAndTest/TFT_Test.i
+
+# target to preprocess a source file
+LibraryAndTest/TFT_Test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/TFT_Test.cpp.i
+.PHONY : LibraryAndTest/TFT_Test.cpp.i
+
+LibraryAndTest/TFT_Test.s: LibraryAndTest/TFT_Test.cpp.s
+.PHONY : LibraryAndTest/TFT_Test.s
+
+# target to generate assembly for a file
+LibraryAndTest/TFT_Test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/TFT_Test.cpp.s
+.PHONY : LibraryAndTest/TFT_Test.cpp.s
+
+LibraryAndTest/gpio.o: LibraryAndTest/gpio.cpp.o
+.PHONY : LibraryAndTest/gpio.o
+
+# target to build an object file
+LibraryAndTest/gpio.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/gpio.cpp.o
+.PHONY : LibraryAndTest/gpio.cpp.o
+
+LibraryAndTest/gpio.i: LibraryAndTest/gpio.cpp.i
+.PHONY : LibraryAndTest/gpio.i
+
+# target to preprocess a source file
+LibraryAndTest/gpio.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/gpio.cpp.i
+.PHONY : LibraryAndTest/gpio.cpp.i
+
+LibraryAndTest/gpio.s: LibraryAndTest/gpio.cpp.s
+.PHONY : LibraryAndTest/gpio.s
+
+# target to generate assembly for a file
+LibraryAndTest/gpio.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/gpio.cpp.s
+.PHONY : LibraryAndTest/gpio.cpp.s
+
+LibraryAndTest/gtim_pwm.o: LibraryAndTest/gtim_pwm.cpp.o
+.PHONY : LibraryAndTest/gtim_pwm.o
+
+# target to build an object file
+LibraryAndTest/gtim_pwm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/gtim_pwm.cpp.o
+.PHONY : LibraryAndTest/gtim_pwm.cpp.o
+
+LibraryAndTest/gtim_pwm.i: LibraryAndTest/gtim_pwm.cpp.i
+.PHONY : LibraryAndTest/gtim_pwm.i
+
+# target to preprocess a source file
+LibraryAndTest/gtim_pwm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/gtim_pwm.cpp.i
+.PHONY : LibraryAndTest/gtim_pwm.cpp.i
+
+LibraryAndTest/gtim_pwm.s: LibraryAndTest/gtim_pwm.cpp.s
+.PHONY : LibraryAndTest/gtim_pwm.s
+
+# target to generate assembly for a file
+LibraryAndTest/gtim_pwm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/gtim_pwm.cpp.s
+.PHONY : LibraryAndTest/gtim_pwm.cpp.s
+
+LibraryAndTest/gtim_pwm_Test.o: LibraryAndTest/gtim_pwm_Test.cpp.o
+.PHONY : LibraryAndTest/gtim_pwm_Test.o
+
+# target to build an object file
+LibraryAndTest/gtim_pwm_Test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/gtim_pwm_Test.cpp.o
+.PHONY : LibraryAndTest/gtim_pwm_Test.cpp.o
+
+LibraryAndTest/gtim_pwm_Test.i: LibraryAndTest/gtim_pwm_Test.cpp.i
+.PHONY : LibraryAndTest/gtim_pwm_Test.i
+
+# target to preprocess a source file
+LibraryAndTest/gtim_pwm_Test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/gtim_pwm_Test.cpp.i
+.PHONY : LibraryAndTest/gtim_pwm_Test.cpp.i
+
+LibraryAndTest/gtim_pwm_Test.s: LibraryAndTest/gtim_pwm_Test.cpp.s
+.PHONY : LibraryAndTest/gtim_pwm_Test.s
+
+# target to generate assembly for a file
+LibraryAndTest/gtim_pwm_Test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/gtim_pwm_Test.cpp.s
+.PHONY : LibraryAndTest/gtim_pwm_Test.cpp.s
+
+LibraryAndTest/pid.o: LibraryAndTest/pid.cpp.o
+.PHONY : LibraryAndTest/pid.o
+
+# target to build an object file
+LibraryAndTest/pid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/pid.cpp.o
+.PHONY : LibraryAndTest/pid.cpp.o
+
+LibraryAndTest/pid.i: LibraryAndTest/pid.cpp.i
+.PHONY : LibraryAndTest/pid.i
+
+# target to preprocess a source file
+LibraryAndTest/pid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/pid.cpp.i
+.PHONY : LibraryAndTest/pid.cpp.i
+
+LibraryAndTest/pid.s: LibraryAndTest/pid.cpp.s
+.PHONY : LibraryAndTest/pid.s
+
+# target to generate assembly for a file
+LibraryAndTest/pid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/pid.cpp.s
+.PHONY : LibraryAndTest/pid.cpp.s
+
+LibraryAndTest/pwm.o: LibraryAndTest/pwm.cpp.o
+.PHONY : LibraryAndTest/pwm.o
+
+# target to build an object file
+LibraryAndTest/pwm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/pwm.cpp.o
+.PHONY : LibraryAndTest/pwm.cpp.o
+
+LibraryAndTest/pwm.i: LibraryAndTest/pwm.cpp.i
+.PHONY : LibraryAndTest/pwm.i
+
+# target to preprocess a source file
+LibraryAndTest/pwm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/pwm.cpp.i
+.PHONY : LibraryAndTest/pwm.cpp.i
+
+LibraryAndTest/pwm.s: LibraryAndTest/pwm.cpp.s
+.PHONY : LibraryAndTest/pwm.s
+
+# target to generate assembly for a file
+LibraryAndTest/pwm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/pwm.cpp.s
+.PHONY : LibraryAndTest/pwm.cpp.s
+
+src/Motor.o: src/Motor.cpp.o
+.PHONY : src/Motor.o
+
+# target to build an object file
+src/Motor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Motor.cpp.o
+.PHONY : src/Motor.cpp.o
+
+src/Motor.i: src/Motor.cpp.i
+.PHONY : src/Motor.i
+
+# target to preprocess a source file
+src/Motor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Motor.cpp.i
+.PHONY : src/Motor.cpp.i
+
+src/Motor.s: src/Motor.cpp.s
+.PHONY : src/Motor.s
+
+# target to generate assembly for a file
+src/Motor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Motor.cpp.s
+.PHONY : src/Motor.cpp.s
 
 src/Robomain.o: src/Robomain.cpp.o
 .PHONY : src/Robomain.o
@@ -321,149 +537,29 @@ src/Robomain.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Robomain.cpp.s
 .PHONY : src/Robomain.cpp.s
 
-src/Servo_Test.o: src/Servo_Test.cpp.o
-.PHONY : src/Servo_Test.o
+src/Servo.o: src/Servo.cpp.o
+.PHONY : src/Servo.o
 
 # target to build an object file
-src/Servo_Test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Servo_Test.cpp.o
-.PHONY : src/Servo_Test.cpp.o
+src/Servo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Servo.cpp.o
+.PHONY : src/Servo.cpp.o
 
-src/Servo_Test.i: src/Servo_Test.cpp.i
-.PHONY : src/Servo_Test.i
-
-# target to preprocess a source file
-src/Servo_Test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Servo_Test.cpp.i
-.PHONY : src/Servo_Test.cpp.i
-
-src/Servo_Test.s: src/Servo_Test.cpp.s
-.PHONY : src/Servo_Test.s
-
-# target to generate assembly for a file
-src/Servo_Test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Servo_Test.cpp.s
-.PHONY : src/Servo_Test.cpp.s
-
-src/TFT.o: src/TFT.cpp.o
-.PHONY : src/TFT.o
-
-# target to build an object file
-src/TFT.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TFT.cpp.o
-.PHONY : src/TFT.cpp.o
-
-src/TFT.i: src/TFT.cpp.i
-.PHONY : src/TFT.i
+src/Servo.i: src/Servo.cpp.i
+.PHONY : src/Servo.i
 
 # target to preprocess a source file
-src/TFT.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TFT.cpp.i
-.PHONY : src/TFT.cpp.i
+src/Servo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Servo.cpp.i
+.PHONY : src/Servo.cpp.i
 
-src/TFT.s: src/TFT.cpp.s
-.PHONY : src/TFT.s
-
-# target to generate assembly for a file
-src/TFT.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TFT.cpp.s
-.PHONY : src/TFT.cpp.s
-
-src/TFT_Test.o: src/TFT_Test.cpp.o
-.PHONY : src/TFT_Test.o
-
-# target to build an object file
-src/TFT_Test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TFT_Test.cpp.o
-.PHONY : src/TFT_Test.cpp.o
-
-src/TFT_Test.i: src/TFT_Test.cpp.i
-.PHONY : src/TFT_Test.i
-
-# target to preprocess a source file
-src/TFT_Test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TFT_Test.cpp.i
-.PHONY : src/TFT_Test.cpp.i
-
-src/TFT_Test.s: src/TFT_Test.cpp.s
-.PHONY : src/TFT_Test.s
+src/Servo.s: src/Servo.cpp.s
+.PHONY : src/Servo.s
 
 # target to generate assembly for a file
-src/TFT_Test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/TFT_Test.cpp.s
-.PHONY : src/TFT_Test.cpp.s
-
-src/gpio.o: src/gpio.cpp.o
-.PHONY : src/gpio.o
-
-# target to build an object file
-src/gpio.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/gpio.cpp.o
-.PHONY : src/gpio.cpp.o
-
-src/gpio.i: src/gpio.cpp.i
-.PHONY : src/gpio.i
-
-# target to preprocess a source file
-src/gpio.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/gpio.cpp.i
-.PHONY : src/gpio.cpp.i
-
-src/gpio.s: src/gpio.cpp.s
-.PHONY : src/gpio.s
-
-# target to generate assembly for a file
-src/gpio.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/gpio.cpp.s
-.PHONY : src/gpio.cpp.s
-
-src/gtim_pwm.o: src/gtim_pwm.cpp.o
-.PHONY : src/gtim_pwm.o
-
-# target to build an object file
-src/gtim_pwm.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/gtim_pwm.cpp.o
-.PHONY : src/gtim_pwm.cpp.o
-
-src/gtim_pwm.i: src/gtim_pwm.cpp.i
-.PHONY : src/gtim_pwm.i
-
-# target to preprocess a source file
-src/gtim_pwm.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/gtim_pwm.cpp.i
-.PHONY : src/gtim_pwm.cpp.i
-
-src/gtim_pwm.s: src/gtim_pwm.cpp.s
-.PHONY : src/gtim_pwm.s
-
-# target to generate assembly for a file
-src/gtim_pwm.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/gtim_pwm.cpp.s
-.PHONY : src/gtim_pwm.cpp.s
-
-src/gtim_pwm_Test.o: src/gtim_pwm_Test.cpp.o
-.PHONY : src/gtim_pwm_Test.o
-
-# target to build an object file
-src/gtim_pwm_Test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/gtim_pwm_Test.cpp.o
-.PHONY : src/gtim_pwm_Test.cpp.o
-
-src/gtim_pwm_Test.i: src/gtim_pwm_Test.cpp.i
-.PHONY : src/gtim_pwm_Test.i
-
-# target to preprocess a source file
-src/gtim_pwm_Test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/gtim_pwm_Test.cpp.i
-.PHONY : src/gtim_pwm_Test.cpp.i
-
-src/gtim_pwm_Test.s: src/gtim_pwm_Test.cpp.s
-.PHONY : src/gtim_pwm_Test.s
-
-# target to generate assembly for a file
-src/gtim_pwm_Test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/gtim_pwm_Test.cpp.s
-.PHONY : src/gtim_pwm_Test.cpp.s
+src/Servo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Servo.cpp.s
+.PHONY : src/Servo.cpp.s
 
 src/image.o: src/image.cpp.o
 .PHONY : src/image.o
@@ -513,30 +609,6 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/pwm.o: src/pwm.cpp.o
-.PHONY : src/pwm.o
-
-# target to build an object file
-src/pwm.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/pwm.cpp.o
-.PHONY : src/pwm.cpp.o
-
-src/pwm.i: src/pwm.cpp.i
-.PHONY : src/pwm.i
-
-# target to preprocess a source file
-src/pwm.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/pwm.cpp.i
-.PHONY : src/pwm.cpp.i
-
-src/pwm.s: src/pwm.cpp.s
-.PHONY : src/pwm.s
-
-# target to generate assembly for a file
-src/pwm.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/pwm.cpp.s
-.PHONY : src/pwm.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -546,57 +618,66 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
-	@echo "... src/Cam_Test.o"
-	@echo "... src/Cam_Test.i"
-	@echo "... src/Cam_Test.s"
-	@echo "... src/GPIO_Test.o"
-	@echo "... src/GPIO_Test.i"
-	@echo "... src/GPIO_Test.s"
-	@echo "... src/HW_SPI.o"
-	@echo "... src/HW_SPI.i"
-	@echo "... src/HW_SPI.s"
-	@echo "... src/HW_gpio.o"
-	@echo "... src/HW_gpio.i"
-	@echo "... src/HW_gpio.s"
-	@echo "... src/MAP_ADDR.o"
-	@echo "... src/MAP_ADDR.i"
-	@echo "... src/MAP_ADDR.s"
-	@echo "... src/Motor_Test.o"
-	@echo "... src/Motor_Test.i"
-	@echo "... src/Motor_Test.s"
-	@echo "... src/Pwm_Test.o"
-	@echo "... src/Pwm_Test.i"
-	@echo "... src/Pwm_Test.s"
+	@echo "... LibraryAndTest/Cam_Test.o"
+	@echo "... LibraryAndTest/Cam_Test.i"
+	@echo "... LibraryAndTest/Cam_Test.s"
+	@echo "... LibraryAndTest/GPIO_Test.o"
+	@echo "... LibraryAndTest/GPIO_Test.i"
+	@echo "... LibraryAndTest/GPIO_Test.s"
+	@echo "... LibraryAndTest/HW_SPI.o"
+	@echo "... LibraryAndTest/HW_SPI.i"
+	@echo "... LibraryAndTest/HW_SPI.s"
+	@echo "... LibraryAndTest/HW_gpio.o"
+	@echo "... LibraryAndTest/HW_gpio.i"
+	@echo "... LibraryAndTest/HW_gpio.s"
+	@echo "... LibraryAndTest/MAP_ADDR.o"
+	@echo "... LibraryAndTest/MAP_ADDR.i"
+	@echo "... LibraryAndTest/MAP_ADDR.s"
+	@echo "... LibraryAndTest/Motor_Test.o"
+	@echo "... LibraryAndTest/Motor_Test.i"
+	@echo "... LibraryAndTest/Motor_Test.s"
+	@echo "... LibraryAndTest/Pwm_Test.o"
+	@echo "... LibraryAndTest/Pwm_Test.i"
+	@echo "... LibraryAndTest/Pwm_Test.s"
+	@echo "... LibraryAndTest/Servo_Test.o"
+	@echo "... LibraryAndTest/Servo_Test.i"
+	@echo "... LibraryAndTest/Servo_Test.s"
+	@echo "... LibraryAndTest/TFT.o"
+	@echo "... LibraryAndTest/TFT.i"
+	@echo "... LibraryAndTest/TFT.s"
+	@echo "... LibraryAndTest/TFT_Test.o"
+	@echo "... LibraryAndTest/TFT_Test.i"
+	@echo "... LibraryAndTest/TFT_Test.s"
+	@echo "... LibraryAndTest/gpio.o"
+	@echo "... LibraryAndTest/gpio.i"
+	@echo "... LibraryAndTest/gpio.s"
+	@echo "... LibraryAndTest/gtim_pwm.o"
+	@echo "... LibraryAndTest/gtim_pwm.i"
+	@echo "... LibraryAndTest/gtim_pwm.s"
+	@echo "... LibraryAndTest/gtim_pwm_Test.o"
+	@echo "... LibraryAndTest/gtim_pwm_Test.i"
+	@echo "... LibraryAndTest/gtim_pwm_Test.s"
+	@echo "... LibraryAndTest/pid.o"
+	@echo "... LibraryAndTest/pid.i"
+	@echo "... LibraryAndTest/pid.s"
+	@echo "... LibraryAndTest/pwm.o"
+	@echo "... LibraryAndTest/pwm.i"
+	@echo "... LibraryAndTest/pwm.s"
+	@echo "... src/Motor.o"
+	@echo "... src/Motor.i"
+	@echo "... src/Motor.s"
 	@echo "... src/Robomain.o"
 	@echo "... src/Robomain.i"
 	@echo "... src/Robomain.s"
-	@echo "... src/Servo_Test.o"
-	@echo "... src/Servo_Test.i"
-	@echo "... src/Servo_Test.s"
-	@echo "... src/TFT.o"
-	@echo "... src/TFT.i"
-	@echo "... src/TFT.s"
-	@echo "... src/TFT_Test.o"
-	@echo "... src/TFT_Test.i"
-	@echo "... src/TFT_Test.s"
-	@echo "... src/gpio.o"
-	@echo "... src/gpio.i"
-	@echo "... src/gpio.s"
-	@echo "... src/gtim_pwm.o"
-	@echo "... src/gtim_pwm.i"
-	@echo "... src/gtim_pwm.s"
-	@echo "... src/gtim_pwm_Test.o"
-	@echo "... src/gtim_pwm_Test.i"
-	@echo "... src/gtim_pwm_Test.s"
+	@echo "... src/Servo.o"
+	@echo "... src/Servo.i"
+	@echo "... src/Servo.s"
 	@echo "... src/image.o"
 	@echo "... src/image.i"
 	@echo "... src/image.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/pwm.o"
-	@echo "... src/pwm.i"
-	@echo "... src/pwm.s"
 .PHONY : help
 
 

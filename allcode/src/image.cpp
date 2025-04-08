@@ -1,8 +1,8 @@
 //八临域代码
 #include "image.hpp"
-
 // 定义 bin_image 为全局变量
 uint8_t bin_image[image_h][image_w];  
+
 
 /*
 函数名称：int my_abs(int value)
@@ -63,7 +63,7 @@ uint8 get_start_point(uint8 start_row)
 		}
 	}
 
-	if(l_found&&r_found)return 1;
+	if(l_found && r_found)return 1;
 	else {
 		printf("未找到起点\n");
 		return 0;
@@ -391,7 +391,7 @@ Mat capture_frame() {
     cap.set(CAP_PROP_FRAME_WIDTH, image_w);//width
     cap.set(CAP_PROP_FRAME_HEIGHT, image_h);//height
     cap.set(CAP_PROP_FPS, 60);
-    double fps = cap.get(CAP_PROP_FPS);  // 读取摄像头实际帧率
+    //double fps = cap.get(CAP_PROP_FPS);  // 读取摄像头实际帧率
     //cout << "摄像头当前帧率: " << fps << " FPS" << endl;
 
     Mat frame;
@@ -402,17 +402,17 @@ Mat capture_frame() {
         return Mat();  // 返回空的Mat对象
     }
 
-	// 裁剪高度范围 [20, 100]
-    int start_y = 20;
-    int height = 100 - 20;  // 计算裁剪高度
-    // 确保裁剪区域在图像范围内
-    if (start_y >= 0 && height > 0 && (start_y + height) <= image_h) {
-        Rect roi(0, start_y, image_w, height);  // 矩形区域: x=0, y=20, 宽度=原图宽度, 高度=80
-        frame = frame(roi);  // 提取ROI
-    } else {
-        cerr << "裁剪出错了！" << endl;
-        return Mat();  // 返回空的Mat对象
-    }
+	// // 裁剪高度范围 [20, 100]
+    // int start_y = 30;
+    // int height = 90 - 30;  // 计算裁剪高度
+    // // 确保裁剪区域在图像范围内
+    // if (start_y >= 0 && height > 0 && (start_y + height) <= image_h) {
+    //     Rect roi(0, start_y, image_w, height);  // 矩形区域: x=0, y=20, 宽度=原图宽度, 高度=80
+    //     frame = frame(roi);  // 提取ROI
+    // } else {
+    //     cerr << "裁剪出错了！" << endl;
+    //     return Mat();  // 返回空的Mat对象
+    // }
 		// TFTSPI_Init(0);
 		// TFTSPI_Road(0, 0, 120, 160, frame.data);
     return frame.clone();  // 返回帧的副本以确保数据安全
@@ -468,6 +468,7 @@ void Cam_Address(Mat frame)
         // 二值化
 		equalizeHist(gray, gray);
         threshold(gray, binary, 1, 255, THRESH_BINARY | THRESH_OTSU);
+		//threshold(gray, binary, 70, 255, THRESH_BINARY);
 		//adaptiveThreshold(gray, binary, 255, ADAPTIVE_THRESH_GAUSSIAN_C, THRESH_BINARY, 11, 2);
 		// morphologyEx(binary, binary, MORPH_OPEN, Mat());
 		// morphologyEx(binary, binary, MORPH_CLOSE, Mat()); // 修复边缘
@@ -538,15 +539,15 @@ image_draw_rectan(bin_image);//预处理
 data_stastics_l = 0;
 data_stastics_r = 0;
 ///////////////////////////////////////TFT屏幕显示二值化图像///////////////////////////////////////////
-TFTSPI_Init(0); // LCD初始化    0：横屏     1：竖屏
-cout << "TFTSPI_Init" << endl;
-//1.新TFT调用显示二值化
-uint8_t *tft_buffer = (uint8_t *)malloc(image_w * image_h * 2);
-BinToTFTFormat((uint8_t*)bin_image, image_w, image_h, tft_buffer);
-TFTSPI_Show_Pic2(0, 0, image_w, image_h, tft_buffer);
-free(tft_buffer);
+// TFTSPI_Init(0); // LCD初始化    0：横屏     1：竖屏
+// cout << "TFTSPI_Init" << endl;
+// //1.新TFT调用显示二值化
+// uint8_t *tft_buffer = (uint8_t *)malloc(image_w * image_h * 2);
+// BinToTFTFormat((uint8_t*)bin_image, image_w, image_h, tft_buffer);
+// TFTSPI_Show_Pic2(0, 0, image_w, image_h, tft_buffer);
+// free(tft_buffer);
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
-if (get_start_point(image_h - 2))//找到起点了，再执行八领域，没找到就一直找
+if (get_start_point(image_h - 2))//找到起点了，再执行八领域
 {
 	printf("正在开始八领域\n");
 	search_l_r((uint16)USE_num, bin_image, &data_stastics_l, &data_stastics_r, start_point_l[0], start_point_l[1], start_point_r[0], start_point_r[1], &hightest);
@@ -561,12 +562,12 @@ else{
 }
 
 ///////////////////////////////////////2.TFT显示左右边界点//////////////////////////////////////
-for (i = 0; i < data_stastics_l; i++) {
-    TFTSPI_Draw_Dot(points_l[i][0] + 2, points_l[i][1], u16BLUE);
-}
-for (i = 0; i < data_stastics_r; i++) {
-    TFTSPI_Draw_Dot(points_r[i][0] - 2, points_r[i][1], u16RED);
-}
+// for (i = 0; i < data_stastics_l; i++) {
+//     TFTSPI_Draw_Dot(points_l[i][0] + 2, points_l[i][1], u16BLUE);
+// }
+// for (i = 0; i < data_stastics_r; i++) {
+//     TFTSPI_Draw_Dot(points_r[i][0] - 2, points_r[i][1], u16RED);
+// }
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
 	//计算赛道中线 center_line[i] 及误差 error
@@ -574,9 +575,9 @@ for (i = 0; i < data_stastics_r; i++) {
     {
         center_line[i] = (l_border[i] + r_border[i]) >> 1; // 求中线
 
-    TFTSPI_Draw_Dot(center_line[i], i, u16GREEN);// 画中线（绿色）
-    TFTSPI_Draw_Dot(l_border[i], i, u16BLUE);// 画左边线（蓝色）
-    TFTSPI_Draw_Dot(r_border[i], i, u16RED);// 画右边线（红色）
+    // TFTSPI_Draw_Dot(center_line[i], i, u16GREEN);// 画中线（绿色）
+    // TFTSPI_Draw_Dot(l_border[i], i, u16BLUE);// 画左边线（蓝色）
+    // TFTSPI_Draw_Dot(r_border[i], i, u16RED);// 画右边线（红色）
 
         // 计算误差 error
         if (i >= (image_h * 2.0 / 3.0)) // 只计算 image_h * 2/3 到 image_h 之间的误差

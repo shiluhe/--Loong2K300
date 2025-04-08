@@ -11,6 +11,7 @@ project(main)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
 
 file(GLOB SRC ${PROJECT_SOURCE_DIR}/src/*.cpp)      # 获取包含的源文件
+file(GLOB LIBRARYANDTEST ${PROJECT_SOURCE_DIR}/LibraryAndTest/*.cpp)      # 获取包含的源文件
 #file(GLOB TEST ${PROJECT_SOURCE_DIR}/test/*.cpp)    # 获取包含的源文件
 include_directories(${PROJECT_SOURCE_DIR}/include)  # 指定所需头文件路径
 include_directories(/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/loongarch64-linux-gnu/sysroot/usr/include/)
@@ -29,7 +30,7 @@ find_library(OPENCV_IMGCODECS opencv_imgcodecs /home/hsl/opencv/install/lib)
 # link_libraries(ss)
 
 # 由源文件生成一个可执行程序
-add_executable(main ${SRC})
+add_executable(main ${SRC} ${LIBRARYANDTEST})
 #add_executable(main main.cpp ${SRC} ${TEST})
 
 # 连接OpenCV动态库

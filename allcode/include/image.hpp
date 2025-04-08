@@ -17,7 +17,7 @@ typedef unsigned           int uint32;
 #define black_pixel	0
 
 #define border_max	image_w-2 //图像宽边界最大值
-#define border_min	5	//图像宽边界最小值	
+#define border_min	3	//图像宽边界最小值	
 
 double image_process(Mat frame);
 Mat capture_frame();

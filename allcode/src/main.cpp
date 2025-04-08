@@ -28,7 +28,8 @@ int main()
     //MotorTest();            // 电机测试程序
     //ServoTest();            // 舵机测试程序
     // GpioTest();             // 久久派22个GPIO翻转测试
-    BeepOff();
+    
+    //BeepOff();
     Motion1();
 
 
