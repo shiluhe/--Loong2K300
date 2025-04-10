@@ -3252,7 +3252,8 @@ CMakeFiles/main.dir/src/Robomain.cpp.o: ../src/Robomain.cpp \
   ../include/gtim_pwm.hpp \
   ../include/pid.hpp \
   ../include/Motor.hpp \
-  ../include/pwm.hpp
+  ../include/pwm.hpp \
+  ../include/TFT.hpp
 
 CMakeFiles/main.dir/src/Servo.cpp.o: ../src/Servo.cpp \
   /opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/loongarch64-linux-gnu/sysroot/usr/include/stdc-predef.h \

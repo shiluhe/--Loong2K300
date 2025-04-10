@@ -489,4 +489,5 @@ CMakeFiles/main.dir/src/Robomain.cpp.o: \
  /mnt/hgfs/ubuntu-shareddoc/code/allcode/include/gtim_pwm.hpp \
  /mnt/hgfs/ubuntu-shareddoc/code/allcode/include/pid.hpp \
  /mnt/hgfs/ubuntu-shareddoc/code/allcode/include/Motor.hpp \
- /mnt/hgfs/ubuntu-shareddoc/code/allcode/include/pwm.hpp
+ /mnt/hgfs/ubuntu-shareddoc/code/allcode/include/pwm.hpp \
+ /mnt/hgfs/ubuntu-shareddoc/code/allcode/include/TFT.hpp

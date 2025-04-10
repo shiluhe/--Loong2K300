@@ -20,11 +20,13 @@ private:
     double minAngle;  // 最小角度（例如 160000）
     double maxAngle;  // 最大角度（例如 180000）
     double centerAngle;  // 中间角度（例如 170000）
+    double PwmScale = 333.33;
+    double max_error = 80.0;
 public:
     ServoController(int pin, double kp, double ki, double kd,
-                    double minAngle = 160000.0,
-                    double maxAngle = 180000.0,
-                    double centerAngle = 170000.0);
+                    double minAngle = -30.0,
+                    double maxAngle = 30.0,
+                    double centerAngle = 0.0);
     ~ServoController();
     void Run(double error);
 };

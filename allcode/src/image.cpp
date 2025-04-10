@@ -38,7 +38,7 @@ uint8 get_start_point(uint8 start_row)
 	start_point_r[0] = 0;//x
 	start_point_r[1] = 0;//y
 
-		//从中间往左边，先找起点
+	//从中间往左边，先找起点
 	for (i = image_w / 2; i > border_min; i--)
 	{
 		start_point_l[0] = i;//x
@@ -176,7 +176,7 @@ void search_l_r(uint16 break_flag, uint8(*image)[image_w], uint16 *l_stastic, ui
 		for (i = 0; i < 8; i++)
 		{
 			if (image[search_filds_l[i][1]][search_filds_l[i][0]] == 0
-				&& image[search_filds_l[(i + 1) & 7][1]][search_filds_l[(i + 1) & 7][0]] == 255)
+				&& image[search_filds_l[(i + 1) & 7][1]][search_filds_l[(i + 1) & 7][0]] == 1)
 			{
 				temp_l[index_l][0] = search_filds_l[(i)][0];
 				temp_l[index_l][1] = search_filds_l[(i)][1];
@@ -219,7 +219,7 @@ void search_l_r(uint16 break_flag, uint8(*image)[image_w], uint16 *l_stastic, ui
 		}
 		if ((points_r[r_data_statics][1] < points_l[l_data_statics - 1][1]))
 		{
-			printf("\n如果左边比右边高了,左边等待右边\n");	
+			//printf("\n如果左边比右边高了,左边等待右边\n");	
 			continue;//如果左边比右边高了，左边等待右边
 		}
 		if (dir_l[l_data_statics - 1] == 7
@@ -243,7 +243,7 @@ void search_l_r(uint16 break_flag, uint8(*image)[image_w], uint16 *l_stastic, ui
 		for (i = 0; i < 8; i++)
 		{
 			if (image[search_filds_r[i][1]][search_filds_r[i][0]] == 0
-				&& image[search_filds_r[(i + 1) & 7][1]][search_filds_r[(i + 1) & 7][0]] == 255)
+				&& image[search_filds_r[(i + 1) & 7][1]][search_filds_r[(i + 1) & 7][0]] == 1)
 			{
 				temp_r[index_r][0] = search_filds_r[(i)][0];
 				temp_r[index_r][1] = search_filds_r[(i)][1];
@@ -371,8 +371,8 @@ void image_draw_rectan(uint8(*image)[image_w])
 
 	}
 //////////////调试打印////////////////////////////
-	    //     for (int i = 0; i < image_h; i += 2) {
-        //     for (int j = 0; j < image_w; j += 2) {
+	    //     for (int i = 0; i < image_h; i += 1) {
+        //     for (int j = 0; j < image_w; j += 1) {
         //         printf("%d ", bin_image[i][j]);
         //     }
         //     printf("\n");
@@ -380,20 +380,19 @@ void image_draw_rectan(uint8(*image)[image_w])
 ////////////////////////////////////////////////////////
 }
 
-Mat capture_frame() {
-    static VideoCapture cap(0);  // 使用static保持摄像头持续打开
+static VideoCapture cap(0);  // 使用static保持摄像头持续打开
+void Camera_Init() {
     if (!cap.isOpened()) {
         cerr << "Error opening video stream" << endl;
-        return Mat();  // 返回空的Mat对象
+        return;
     }
-
     // 设置摄像头参数
-    cap.set(CAP_PROP_FRAME_WIDTH, image_w);//width
-    cap.set(CAP_PROP_FRAME_HEIGHT, image_h);//height
+    cap.set(CAP_PROP_FRAME_WIDTH, image_w);
+    cap.set(CAP_PROP_FRAME_HEIGHT, image_h); 
     cap.set(CAP_PROP_FPS, 60);
-    //double fps = cap.get(CAP_PROP_FPS);  // 读取摄像头实际帧率
-    //cout << "摄像头当前帧率: " << fps << " FPS" << endl;
+}
 
+Mat capture_frame() {
     Mat frame;
     cap.read(frame);
 
@@ -414,9 +413,10 @@ Mat capture_frame() {
     //     return Mat();  // 返回空的Mat对象
     // }
 		// TFTSPI_Init(0);
-		// TFTSPI_Road(0, 0, 120, 160, frame.data);
+		//TFTSPI_Road(0, 0, 120, 160, frame.data);
     return frame.clone();  // 返回帧的副本以确保数据安全
 }
+
 
 /*
 函数名称：void Cam_Address()
@@ -425,21 +425,6 @@ example:Cam_Address()
 */
 void Cam_Address(Mat frame)
 {
-    // VideoCapture cap(0);
-    // if (!cap.isOpened())
-    // {
-    //     cerr << "Error opening video stream" << endl;
-    //     return;
-    // }
-
-    // // 设置摄像头参数
-    // cap.set(CAP_PROP_FRAME_WIDTH, image_w);
-    // cap.set(CAP_PROP_FRAME_HEIGHT, image_h);
-    // cap.set(CAP_PROP_FPS, 60);
-	// double fps = cap.get(CAP_PROP_FPS);  // 读取摄像头实际帧率
-
-    // cout << "摄像头当前帧率: " << fps << " FPS" << endl;
-
     // Mat frame, gray, binary, morph;
 
     // // 定义 3x3 结构元素
@@ -460,13 +445,12 @@ void Cam_Address(Mat frame)
 		Mat gray, binary, morph;
         // 转灰度
         cvtColor(frame, gray, COLOR_BGR2GRAY);
-		gray.convertTo(gray, -1, 1.2, 20); // alpha=1.5（对比度）, beta=50（亮度）
+		//gray.convertTo(gray, -1, 1.5, 50); // alpha=1.5（对比度）, beta=50（亮度）
 /////////////////////////////////TFT灰度图像显示///////////////////////////////////////////		
-		// TFTSPI_Init(0);
-		// TFTSPI_Road(0, 0, 120, 160, gray.data);
+		//TFTSPI_Road(0, 0, 120, 160, gray.data);
 ////////////////////////////////TFT灰度图像显示/////////////////////////////////////////////		
         // 二值化
-		equalizeHist(gray, gray);
+		//equalizeHist(gray, gray);
         threshold(gray, binary, 1, 255, THRESH_BINARY | THRESH_OTSU);
 		//threshold(gray, binary, 70, 255, THRESH_BINARY);
 		//adaptiveThreshold(gray, binary, 255, ADAPTIVE_THRESH_GAUSSIAN_C, THRESH_BINARY, 11, 2);
@@ -520,6 +504,22 @@ TFT屏幕：展示八临域代码的边线与中线
 参数说明：无
 example： image_process();
  */
+//image_h上的error加权数组
+// uint8 mid_weight_list[120]={
+// 	1,1,1,1,1,1,1,1,1,1,
+// 	1,1,1,1,1,1,1,1,1,1,
+// 	1,1,1,1,1,1,1,1,1,1,
+// 	1,1,1,1,1,1,1,1,1,1,
+// 	1,1,1,1,1,1,1,1,1,1,
+// 	6,6,6,6,6,6,6,6,6,6,
+// 	7,8,9,10,11,12,13,14,15,16,
+// 	17,18,19,20,20,20,20,19,18,17,
+// 	16,15,14,13,12,11,10,9,8,7,
+// 	6,6,6,6,6,6,6,6,6,6,
+// 	1,1,1,1,1,1,1,1,1,1,
+// 	1,1,1,1,1,1,1,1,1,1,
+// };
+
 double image_process(Mat frame)
 {
 uint16 i;
@@ -528,20 +528,18 @@ double error = 0;
 double sum_error = 0;
 double avg_error = 0;
 int count = 0;
+
 // /*这是离线调试用的（总钻风）*/
 // Get_image(mt9v03x_image);
 // turn_to_bin();
 // /*提取赛道边界*/
 // image_filter(bin_image);//滤波
-Cam_Address(frame);
+Cam_Address(frame);//灰度化、二值化
 image_draw_rectan(bin_image);//预处理
 //清零
 data_stastics_l = 0;
 data_stastics_r = 0;
 ///////////////////////////////////////TFT屏幕显示二值化图像///////////////////////////////////////////
-// TFTSPI_Init(0); // LCD初始化    0：横屏     1：竖屏
-// cout << "TFTSPI_Init" << endl;
-// //1.新TFT调用显示二值化
 // uint8_t *tft_buffer = (uint8_t *)malloc(image_w * image_h * 2);
 // BinToTFTFormat((uint8_t*)bin_image, image_w, image_h, tft_buffer);
 // TFTSPI_Show_Pic2(0, 0, image_w, image_h, tft_buffer);
@@ -559,6 +557,9 @@ if (get_start_point(image_h - 2))//找到起点了，再执行八领域
 }
 else{
 	printf("没有进入八领域\n");
+	error = 0;
+	avg_error = 0;
+	return avg_error;
 }
 
 ///////////////////////////////////////2.TFT显示左右边界点//////////////////////////////////////
@@ -568,7 +569,7 @@ else{
 // for (i = 0; i < data_stastics_r; i++) {
 //     TFTSPI_Draw_Dot(points_r[i][0] - 2, points_r[i][1], u16RED);
 // }
-//////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
 
 	//计算赛道中线 center_line[i] 及误差 error
     for (i = hightest; i < image_h - 1; i++)
@@ -579,13 +580,13 @@ else{
     // TFTSPI_Draw_Dot(l_border[i], i, u16BLUE);// 画左边线（蓝色）
     // TFTSPI_Draw_Dot(r_border[i], i, u16RED);// 画右边线（红色）
 
-        // 计算误差 error
-        if (i >= (image_h * 2.0 / 3.0)) // 只计算 image_h * 2/3 到 image_h 之间的误差
-        {
-            error = center_line[i] - (image_w / 2.0); // 赛道中线 - 摄像头中心 (>0：小车右转；<0:小车左转)
-            sum_error += error;
-            count++;
-        }
+	// 计算误差 error
+	if (i >= (image_h * 2.0 / 3.0)) // 只计算 image_h * 2/3 到 image_h 之间的误差
+	{
+		error = center_line[i] - (image_w / 2.0); // 赛道中线 - 摄像头中心 (>0：小车右转；<0:小车左转)
+		sum_error += error;
+		count++;
+	}
 	}
     // 计算平均误差
     if (count > 0)
@@ -598,26 +599,3 @@ else{
 	return avg_error;
 }
 
-
-// //显示图像   改成你自己的就行 等后期足够自信了，显示关掉，显示屏挺占资源的
-// ips154_displayimage032_zoom(bin_image[0], image_w, image_h, image_w, image_h,0,0);
-
-// 	//根据最终循环次数画出边界点
-// 	for (i = 0; i < data_stastics_l; i++)
-// 	{
-// 		ips154_drawpoint(points_l[i][0]+2, points_l[i][1], uesr_BLUE);//显示起点
-// 	}
-// 	for (i = 0; i < data_stastics_r; i++)
-// 	{
-// 		ips154_drawpoint(points_r[i][0]-2, points_r[i][1], uesr_RED);//显示起点
-// 	}
-
-// 	for (i = hightest; i < image_h-1; i++)
-// 	{
-// 		center_line[i] = (l_border[i] + r_border[i]) >> 1;//求中线
-// 		//求中线最好最后求，不管是补线还是做状态机，全程最好使用一组边线，中线最后求出，不能干扰最后的输出
-// 		//当然也有多组边线的找法，但是个人感觉很繁琐，不建议
-// 		ips154_drawpoint(center_line[i], i, uesr_GREEN);//显示起点 显示中线	
-// 		ips154_drawpoint(l_border[i], i, uesr_GREEN);//显示起点 显示左边线
-// 		ips154_drawpoint(r_border[i], i, uesr_GREEN);//显示起点 显示右边线
-// 	}

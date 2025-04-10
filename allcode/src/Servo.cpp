@@ -44,7 +44,8 @@ ServoController::~ServoController(){
 180000：左边走
 */
 void ServoController::Run(double error) {
-    double output = pid.calculate(error);
+
+    double output = pid.calculate(error);//output限制在-1～1
     double angleControl = centerAngle - output * 30;  // 计算目标角度
 
     // 限制角度范围
@@ -53,10 +54,10 @@ void ServoController::Run(double error) {
     } else if (angleControl < minAngle) {
         angleControl = minAngle;
     }
-
+    double PwmValue = 170000.0 + angleControl * PwmScale;
     // 设置 PWM 占空比
-    pwm.SetDutyCycle(angleControl);
+    pwm.SetDutyCycle(PwmValue);
 
-    // 打印调试信息
-    printf("angleControl = %.2f\n", angleControl);
+    // 打印调试信息，舵机角度控制值
+    printf("angleControl = %.2f\n", -angleControl);
 }

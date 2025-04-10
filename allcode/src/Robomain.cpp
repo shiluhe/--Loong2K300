@@ -2,6 +2,7 @@
 #include "image.hpp"
 #include "Servo.hpp"
 #include "Motor.hpp"
+#include "TFT.hpp"
 
 mutex frame_mutex;
 mutex error_mutex;
@@ -98,19 +99,25 @@ Mat current_frame;
 
 // }
 
-
+void RoboInit(){
+    Camera_Init();
+    //TFTSPI_Init(0);//占用0.2s左右
+}
 void Motion1(){
     BeepOff();
+    RoboInit();
     MotorController Motor{};
-    ServoController Servo(88, 3, 0.1, 0.01);
+    ServoController Servo(88, 2, 0.01, 0.01);
+    sleep(1);
+    
     while(1){
         auto start = chrono::high_resolution_clock::now();  // 记录起始时间
         Motor.MotorRun();
 
-        // Mat frame = capture_frame();  // 假设的摄像头采集函数
-        // double error = image_process(frame);  // 图像处理
-        //Servo.Run(error);  // 舵机控制
-        Servo.Run(0);
+        Mat frame = capture_frame();  // 假设的摄像头采集函数
+        double error = image_process(frame);  // 图像处理
+        Servo.Run(error);  // 舵机控制, error摄像头两线偏差
+        //Servo.Run(80);
         auto end = chrono::high_resolution_clock::now();  // 记录结束时间
         chrono::duration<double> elapsed = end - start;  // 计算耗时
         cout << "Loop time: " << elapsed.count() << " seconds" << endl;
