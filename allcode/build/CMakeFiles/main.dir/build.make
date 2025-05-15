@@ -111,10 +111,24 @@ CMakeFiles/main.dir/src/Servo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Servo.cpp.s"
 	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/Servo.cpp -o CMakeFiles/main.dir/src/Servo.cpp.s
 
+CMakeFiles/main.dir/src/Uart.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/Uart.cpp.o: ../src/Uart.cpp
+CMakeFiles/main.dir/src/Uart.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/Uart.cpp.o"
+	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/Uart.cpp.o -MF CMakeFiles/main.dir/src/Uart.cpp.o.d -o CMakeFiles/main.dir/src/Uart.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/Uart.cpp
+
+CMakeFiles/main.dir/src/Uart.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/Uart.cpp.i"
+	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/Uart.cpp > CMakeFiles/main.dir/src/Uart.cpp.i
+
+CMakeFiles/main.dir/src/Uart.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Uart.cpp.s"
+	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/Uart.cpp -o CMakeFiles/main.dir/src/Uart.cpp.s
+
 CMakeFiles/main.dir/src/image.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/image.cpp.o: ../src/image.cpp
 CMakeFiles/main.dir/src/image.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/image.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/src/image.cpp.o"
 	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/image.cpp.o -MF CMakeFiles/main.dir/src/image.cpp.o.d -o CMakeFiles/main.dir/src/image.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/image.cpp
 
 CMakeFiles/main.dir/src/image.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/main.dir/src/image.cpp.s: cmake_force
 CMakeFiles/main.dir/src/main.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/main.dir/src/main.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/src/main.cpp.o"
 	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/main.cpp.o -MF CMakeFiles/main.dir/src/main.cpp.o.d -o CMakeFiles/main.dir/src/main.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/main.cpp
 
 CMakeFiles/main.dir/src/main.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/main.dir/src/main.cpp.s: cmake_force
 CMakeFiles/main.dir/LibraryAndTest/Cam_Test.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/LibraryAndTest/Cam_Test.cpp.o: ../LibraryAndTest/Cam_Test.cpp
 CMakeFiles/main.dir/LibraryAndTest/Cam_Test.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/Cam_Test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/Cam_Test.cpp.o"
 	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/LibraryAndTest/Cam_Test.cpp.o -MF CMakeFiles/main.dir/LibraryAndTest/Cam_Test.cpp.o.d -o CMakeFiles/main.dir/LibraryAndTest/Cam_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/Cam_Test.cpp
 
 CMakeFiles/main.dir/LibraryAndTest/Cam_Test.cpp.i: cmake_force
@@ -153,10 +167,24 @@ CMakeFiles/main.dir/LibraryAndTest/Cam_Test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/LibraryAndTest/Cam_Test.cpp.s"
 	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/Cam_Test.cpp -o CMakeFiles/main.dir/LibraryAndTest/Cam_Test.cpp.s
 
+CMakeFiles/main.dir/LibraryAndTest/Encoder_Test.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/LibraryAndTest/Encoder_Test.cpp.o: ../LibraryAndTest/Encoder_Test.cpp
+CMakeFiles/main.dir/LibraryAndTest/Encoder_Test.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/Encoder_Test.cpp.o"
+	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/LibraryAndTest/Encoder_Test.cpp.o -MF CMakeFiles/main.dir/LibraryAndTest/Encoder_Test.cpp.o.d -o CMakeFiles/main.dir/LibraryAndTest/Encoder_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/Encoder_Test.cpp
+
+CMakeFiles/main.dir/LibraryAndTest/Encoder_Test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/LibraryAndTest/Encoder_Test.cpp.i"
+	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/Encoder_Test.cpp > CMakeFiles/main.dir/LibraryAndTest/Encoder_Test.cpp.i
+
+CMakeFiles/main.dir/LibraryAndTest/Encoder_Test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/LibraryAndTest/Encoder_Test.cpp.s"
+	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/Encoder_Test.cpp -o CMakeFiles/main.dir/LibraryAndTest/Encoder_Test.cpp.s
+
 CMakeFiles/main.dir/LibraryAndTest/GPIO_Test.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/LibraryAndTest/GPIO_Test.cpp.o: ../LibraryAndTest/GPIO_Test.cpp
 CMakeFiles/main.dir/LibraryAndTest/GPIO_Test.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/GPIO_Test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/GPIO_Test.cpp.o"
 	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/LibraryAndTest/GPIO_Test.cpp.o -MF CMakeFiles/main.dir/LibraryAndTest/GPIO_Test.cpp.o.d -o CMakeFiles/main.dir/LibraryAndTest/GPIO_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/GPIO_Test.cpp
 
 CMakeFiles/main.dir/LibraryAndTest/GPIO_Test.cpp.i: cmake_force
@@ -170,7 +198,7 @@ CMakeFiles/main.dir/LibraryAndTest/GPIO_Test.cpp.s: cmake_force
 CMakeFiles/main.dir/LibraryAndTest/HW_SPI.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/LibraryAndTest/HW_SPI.cpp.o: ../LibraryAndTest/HW_SPI.cpp
 CMakeFiles/main.dir/LibraryAndTest/HW_SPI.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/HW_SPI.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/HW_SPI.cpp.o"
 	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/LibraryAndTest/HW_SPI.cpp.o -MF CMakeFiles/main.dir/LibraryAndTest/HW_SPI.cpp.o.d -o CMakeFiles/main.dir/LibraryAndTest/HW_SPI.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/HW_SPI.cpp
 
 CMakeFiles/main.dir/LibraryAndTest/HW_SPI.cpp.i: cmake_force
@@ -184,7 +212,7 @@ CMakeFiles/main.dir/LibraryAndTest/HW_SPI.cpp.s: cmake_force
 CMakeFiles/main.dir/LibraryAndTest/HW_gpio.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/LibraryAndTest/HW_gpio.cpp.o: ../LibraryAndTest/HW_gpio.cpp
 CMakeFiles/main.dir/LibraryAndTest/HW_gpio.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/HW_gpio.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/HW_gpio.cpp.o"
 	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/LibraryAndTest/HW_gpio.cpp.o -MF CMakeFiles/main.dir/LibraryAndTest/HW_gpio.cpp.o.d -o CMakeFiles/main.dir/LibraryAndTest/HW_gpio.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/HW_gpio.cpp
 
 CMakeFiles/main.dir/LibraryAndTest/HW_gpio.cpp.i: cmake_force
@@ -198,7 +226,7 @@ CMakeFiles/main.dir/LibraryAndTest/HW_gpio.cpp.s: cmake_force
 CMakeFiles/main.dir/LibraryAndTest/MAP_ADDR.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/LibraryAndTest/MAP_ADDR.cpp.o: ../LibraryAndTest/MAP_ADDR.cpp
 CMakeFiles/main.dir/LibraryAndTest/MAP_ADDR.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/MAP_ADDR.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/MAP_ADDR.cpp.o"
 	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/LibraryAndTest/MAP_ADDR.cpp.o -MF CMakeFiles/main.dir/LibraryAndTest/MAP_ADDR.cpp.o.d -o CMakeFiles/main.dir/LibraryAndTest/MAP_ADDR.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/MAP_ADDR.cpp
 
 CMakeFiles/main.dir/LibraryAndTest/MAP_ADDR.cpp.i: cmake_force
@@ -212,7 +240,7 @@ CMakeFiles/main.dir/LibraryAndTest/MAP_ADDR.cpp.s: cmake_force
 CMakeFiles/main.dir/LibraryAndTest/Motor_Test.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/LibraryAndTest/Motor_Test.cpp.o: ../LibraryAndTest/Motor_Test.cpp
 CMakeFiles/main.dir/LibraryAndTest/Motor_Test.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/Motor_Test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/Motor_Test.cpp.o"
 	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/LibraryAndTest/Motor_Test.cpp.o -MF CMakeFiles/main.dir/LibraryAndTest/Motor_Test.cpp.o.d -o CMakeFiles/main.dir/LibraryAndTest/Motor_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/Motor_Test.cpp
 
 CMakeFiles/main.dir/LibraryAndTest/Motor_Test.cpp.i: cmake_force
@@ -223,10 +251,24 @@ CMakeFiles/main.dir/LibraryAndTest/Motor_Test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/LibraryAndTest/Motor_Test.cpp.s"
 	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/Motor_Test.cpp -o CMakeFiles/main.dir/LibraryAndTest/Motor_Test.cpp.s
 
+CMakeFiles/main.dir/LibraryAndTest/PWM_Encoder.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/LibraryAndTest/PWM_Encoder.cpp.o: ../LibraryAndTest/PWM_Encoder.cpp
+CMakeFiles/main.dir/LibraryAndTest/PWM_Encoder.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/PWM_Encoder.cpp.o"
+	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/LibraryAndTest/PWM_Encoder.cpp.o -MF CMakeFiles/main.dir/LibraryAndTest/PWM_Encoder.cpp.o.d -o CMakeFiles/main.dir/LibraryAndTest/PWM_Encoder.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/PWM_Encoder.cpp
+
+CMakeFiles/main.dir/LibraryAndTest/PWM_Encoder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/LibraryAndTest/PWM_Encoder.cpp.i"
+	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/PWM_Encoder.cpp > CMakeFiles/main.dir/LibraryAndTest/PWM_Encoder.cpp.i
+
+CMakeFiles/main.dir/LibraryAndTest/PWM_Encoder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/LibraryAndTest/PWM_Encoder.cpp.s"
+	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/PWM_Encoder.cpp -o CMakeFiles/main.dir/LibraryAndTest/PWM_Encoder.cpp.s
+
 CMakeFiles/main.dir/LibraryAndTest/Pwm_Test.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/LibraryAndTest/Pwm_Test.cpp.o: ../LibraryAndTest/Pwm_Test.cpp
 CMakeFiles/main.dir/LibraryAndTest/Pwm_Test.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/Pwm_Test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/Pwm_Test.cpp.o"
 	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/LibraryAndTest/Pwm_Test.cpp.o -MF CMakeFiles/main.dir/LibraryAndTest/Pwm_Test.cpp.o.d -o CMakeFiles/main.dir/LibraryAndTest/Pwm_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/Pwm_Test.cpp
 
 CMakeFiles/main.dir/LibraryAndTest/Pwm_Test.cpp.i: cmake_force
@@ -240,7 +282,7 @@ CMakeFiles/main.dir/LibraryAndTest/Pwm_Test.cpp.s: cmake_force
 CMakeFiles/main.dir/LibraryAndTest/Servo_Test.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/LibraryAndTest/Servo_Test.cpp.o: ../LibraryAndTest/Servo_Test.cpp
 CMakeFiles/main.dir/LibraryAndTest/Servo_Test.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/Servo_Test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/Servo_Test.cpp.o"
 	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/LibraryAndTest/Servo_Test.cpp.o -MF CMakeFiles/main.dir/LibraryAndTest/Servo_Test.cpp.o.d -o CMakeFiles/main.dir/LibraryAndTest/Servo_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/Servo_Test.cpp
 
 CMakeFiles/main.dir/LibraryAndTest/Servo_Test.cpp.i: cmake_force
@@ -254,7 +296,7 @@ CMakeFiles/main.dir/LibraryAndTest/Servo_Test.cpp.s: cmake_force
 CMakeFiles/main.dir/LibraryAndTest/TFT.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/LibraryAndTest/TFT.cpp.o: ../LibraryAndTest/TFT.cpp
 CMakeFiles/main.dir/LibraryAndTest/TFT.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/TFT.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/TFT.cpp.o"
 	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/LibraryAndTest/TFT.cpp.o -MF CMakeFiles/main.dir/LibraryAndTest/TFT.cpp.o.d -o CMakeFiles/main.dir/LibraryAndTest/TFT.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/TFT.cpp
 
 CMakeFiles/main.dir/LibraryAndTest/TFT.cpp.i: cmake_force
@@ -268,7 +310,7 @@ CMakeFiles/main.dir/LibraryAndTest/TFT.cpp.s: cmake_force
 CMakeFiles/main.dir/LibraryAndTest/TFT_Test.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/LibraryAndTest/TFT_Test.cpp.o: ../LibraryAndTest/TFT_Test.cpp
 CMakeFiles/main.dir/LibraryAndTest/TFT_Test.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/TFT_Test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/TFT_Test.cpp.o"
 	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/LibraryAndTest/TFT_Test.cpp.o -MF CMakeFiles/main.dir/LibraryAndTest/TFT_Test.cpp.o.d -o CMakeFiles/main.dir/LibraryAndTest/TFT_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/TFT_Test.cpp
 
 CMakeFiles/main.dir/LibraryAndTest/TFT_Test.cpp.i: cmake_force
@@ -279,10 +321,38 @@ CMakeFiles/main.dir/LibraryAndTest/TFT_Test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/LibraryAndTest/TFT_Test.cpp.s"
 	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/TFT_Test.cpp -o CMakeFiles/main.dir/LibraryAndTest/TFT_Test.cpp.s
 
+CMakeFiles/main.dir/LibraryAndTest/Uart.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/LibraryAndTest/Uart.cpp.o: ../LibraryAndTest/Uart.cpp
+CMakeFiles/main.dir/LibraryAndTest/Uart.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/Uart.cpp.o"
+	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/LibraryAndTest/Uart.cpp.o -MF CMakeFiles/main.dir/LibraryAndTest/Uart.cpp.o.d -o CMakeFiles/main.dir/LibraryAndTest/Uart.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/Uart.cpp
+
+CMakeFiles/main.dir/LibraryAndTest/Uart.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/LibraryAndTest/Uart.cpp.i"
+	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/Uart.cpp > CMakeFiles/main.dir/LibraryAndTest/Uart.cpp.i
+
+CMakeFiles/main.dir/LibraryAndTest/Uart.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/LibraryAndTest/Uart.cpp.s"
+	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/Uart.cpp -o CMakeFiles/main.dir/LibraryAndTest/Uart.cpp.s
+
+CMakeFiles/main.dir/LibraryAndTest/Uart_Test.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/LibraryAndTest/Uart_Test.cpp.o: ../LibraryAndTest/Uart_Test.cpp
+CMakeFiles/main.dir/LibraryAndTest/Uart_Test.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/Uart_Test.cpp.o"
+	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/LibraryAndTest/Uart_Test.cpp.o -MF CMakeFiles/main.dir/LibraryAndTest/Uart_Test.cpp.o.d -o CMakeFiles/main.dir/LibraryAndTest/Uart_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/Uart_Test.cpp
+
+CMakeFiles/main.dir/LibraryAndTest/Uart_Test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/LibraryAndTest/Uart_Test.cpp.i"
+	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/Uart_Test.cpp > CMakeFiles/main.dir/LibraryAndTest/Uart_Test.cpp.i
+
+CMakeFiles/main.dir/LibraryAndTest/Uart_Test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/LibraryAndTest/Uart_Test.cpp.s"
+	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/Uart_Test.cpp -o CMakeFiles/main.dir/LibraryAndTest/Uart_Test.cpp.s
+
 CMakeFiles/main.dir/LibraryAndTest/gpio.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/LibraryAndTest/gpio.cpp.o: ../LibraryAndTest/gpio.cpp
 CMakeFiles/main.dir/LibraryAndTest/gpio.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/gpio.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/gpio.cpp.o"
 	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/LibraryAndTest/gpio.cpp.o -MF CMakeFiles/main.dir/LibraryAndTest/gpio.cpp.o.d -o CMakeFiles/main.dir/LibraryAndTest/gpio.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/gpio.cpp
 
 CMakeFiles/main.dir/LibraryAndTest/gpio.cpp.i: cmake_force
@@ -296,7 +366,7 @@ CMakeFiles/main.dir/LibraryAndTest/gpio.cpp.s: cmake_force
 CMakeFiles/main.dir/LibraryAndTest/gtim_pwm.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/LibraryAndTest/gtim_pwm.cpp.o: ../LibraryAndTest/gtim_pwm.cpp
 CMakeFiles/main.dir/LibraryAndTest/gtim_pwm.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/gtim_pwm.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/gtim_pwm.cpp.o"
 	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/LibraryAndTest/gtim_pwm.cpp.o -MF CMakeFiles/main.dir/LibraryAndTest/gtim_pwm.cpp.o.d -o CMakeFiles/main.dir/LibraryAndTest/gtim_pwm.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/gtim_pwm.cpp
 
 CMakeFiles/main.dir/LibraryAndTest/gtim_pwm.cpp.i: cmake_force
@@ -310,7 +380,7 @@ CMakeFiles/main.dir/LibraryAndTest/gtim_pwm.cpp.s: cmake_force
 CMakeFiles/main.dir/LibraryAndTest/gtim_pwm_Test.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/LibraryAndTest/gtim_pwm_Test.cpp.o: ../LibraryAndTest/gtim_pwm_Test.cpp
 CMakeFiles/main.dir/LibraryAndTest/gtim_pwm_Test.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/gtim_pwm_Test.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/gtim_pwm_Test.cpp.o"
 	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/LibraryAndTest/gtim_pwm_Test.cpp.o -MF CMakeFiles/main.dir/LibraryAndTest/gtim_pwm_Test.cpp.o.d -o CMakeFiles/main.dir/LibraryAndTest/gtim_pwm_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/gtim_pwm_Test.cpp
 
 CMakeFiles/main.dir/LibraryAndTest/gtim_pwm_Test.cpp.i: cmake_force
@@ -324,7 +394,7 @@ CMakeFiles/main.dir/LibraryAndTest/gtim_pwm_Test.cpp.s: cmake_force
 CMakeFiles/main.dir/LibraryAndTest/pid.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/LibraryAndTest/pid.cpp.o: ../LibraryAndTest/pid.cpp
 CMakeFiles/main.dir/LibraryAndTest/pid.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/pid.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/pid.cpp.o"
 	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/LibraryAndTest/pid.cpp.o -MF CMakeFiles/main.dir/LibraryAndTest/pid.cpp.o.d -o CMakeFiles/main.dir/LibraryAndTest/pid.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/pid.cpp
 
 CMakeFiles/main.dir/LibraryAndTest/pid.cpp.i: cmake_force
@@ -338,7 +408,7 @@ CMakeFiles/main.dir/LibraryAndTest/pid.cpp.s: cmake_force
 CMakeFiles/main.dir/LibraryAndTest/pwm.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/LibraryAndTest/pwm.cpp.o: ../LibraryAndTest/pwm.cpp
 CMakeFiles/main.dir/LibraryAndTest/pwm.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/pwm.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/main.dir/LibraryAndTest/pwm.cpp.o"
 	/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/LibraryAndTest/pwm.cpp.o -MF CMakeFiles/main.dir/LibraryAndTest/pwm.cpp.o.d -o CMakeFiles/main.dir/LibraryAndTest/pwm.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/pwm.cpp
 
 CMakeFiles/main.dir/LibraryAndTest/pwm.cpp.i: cmake_force
@@ -354,18 +424,23 @@ main_OBJECTS = \
 "CMakeFiles/main.dir/src/Motor.cpp.o" \
 "CMakeFiles/main.dir/src/Robomain.cpp.o" \
 "CMakeFiles/main.dir/src/Servo.cpp.o" \
+"CMakeFiles/main.dir/src/Uart.cpp.o" \
 "CMakeFiles/main.dir/src/image.cpp.o" \
 "CMakeFiles/main.dir/src/main.cpp.o" \
 "CMakeFiles/main.dir/LibraryAndTest/Cam_Test.cpp.o" \
+"CMakeFiles/main.dir/LibraryAndTest/Encoder_Test.cpp.o" \
 "CMakeFiles/main.dir/LibraryAndTest/GPIO_Test.cpp.o" \
 "CMakeFiles/main.dir/LibraryAndTest/HW_SPI.cpp.o" \
 "CMakeFiles/main.dir/LibraryAndTest/HW_gpio.cpp.o" \
 "CMakeFiles/main.dir/LibraryAndTest/MAP_ADDR.cpp.o" \
 "CMakeFiles/main.dir/LibraryAndTest/Motor_Test.cpp.o" \
+"CMakeFiles/main.dir/LibraryAndTest/PWM_Encoder.cpp.o" \
 "CMakeFiles/main.dir/LibraryAndTest/Pwm_Test.cpp.o" \
 "CMakeFiles/main.dir/LibraryAndTest/Servo_Test.cpp.o" \
 "CMakeFiles/main.dir/LibraryAndTest/TFT.cpp.o" \
 "CMakeFiles/main.dir/LibraryAndTest/TFT_Test.cpp.o" \
+"CMakeFiles/main.dir/LibraryAndTest/Uart.cpp.o" \
+"CMakeFiles/main.dir/LibraryAndTest/Uart_Test.cpp.o" \
 "CMakeFiles/main.dir/LibraryAndTest/gpio.cpp.o" \
 "CMakeFiles/main.dir/LibraryAndTest/gtim_pwm.cpp.o" \
 "CMakeFiles/main.dir/LibraryAndTest/gtim_pwm_Test.cpp.o" \
@@ -378,18 +453,23 @@ main_EXTERNAL_OBJECTS =
 ../lib/main: CMakeFiles/main.dir/src/Motor.cpp.o
 ../lib/main: CMakeFiles/main.dir/src/Robomain.cpp.o
 ../lib/main: CMakeFiles/main.dir/src/Servo.cpp.o
+../lib/main: CMakeFiles/main.dir/src/Uart.cpp.o
 ../lib/main: CMakeFiles/main.dir/src/image.cpp.o
 ../lib/main: CMakeFiles/main.dir/src/main.cpp.o
 ../lib/main: CMakeFiles/main.dir/LibraryAndTest/Cam_Test.cpp.o
+../lib/main: CMakeFiles/main.dir/LibraryAndTest/Encoder_Test.cpp.o
 ../lib/main: CMakeFiles/main.dir/LibraryAndTest/GPIO_Test.cpp.o
 ../lib/main: CMakeFiles/main.dir/LibraryAndTest/HW_SPI.cpp.o
 ../lib/main: CMakeFiles/main.dir/LibraryAndTest/HW_gpio.cpp.o
 ../lib/main: CMakeFiles/main.dir/LibraryAndTest/MAP_ADDR.cpp.o
 ../lib/main: CMakeFiles/main.dir/LibraryAndTest/Motor_Test.cpp.o
+../lib/main: CMakeFiles/main.dir/LibraryAndTest/PWM_Encoder.cpp.o
 ../lib/main: CMakeFiles/main.dir/LibraryAndTest/Pwm_Test.cpp.o
 ../lib/main: CMakeFiles/main.dir/LibraryAndTest/Servo_Test.cpp.o
 ../lib/main: CMakeFiles/main.dir/LibraryAndTest/TFT.cpp.o
 ../lib/main: CMakeFiles/main.dir/LibraryAndTest/TFT_Test.cpp.o
+../lib/main: CMakeFiles/main.dir/LibraryAndTest/Uart.cpp.o
+../lib/main: CMakeFiles/main.dir/LibraryAndTest/Uart_Test.cpp.o
 ../lib/main: CMakeFiles/main.dir/LibraryAndTest/gpio.cpp.o
 ../lib/main: CMakeFiles/main.dir/LibraryAndTest/gtim_pwm.cpp.o
 ../lib/main: CMakeFiles/main.dir/LibraryAndTest/gtim_pwm_Test.cpp.o
@@ -402,7 +482,7 @@ main_EXTERNAL_OBJECTS =
 ../lib/main: /home/hsl/opencv/install/lib/libopencv_videoio.so
 ../lib/main: /home/hsl/opencv/install/lib/libopencv_imgcodecs.so
 ../lib/main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable ../lib/main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/hgfs/ubuntu-shareddoc/code/allcode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable ../lib/main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

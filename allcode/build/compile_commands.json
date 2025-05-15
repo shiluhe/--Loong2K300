@@ -16,6 +16,11 @@
 },
 {
   "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
+  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include -g -o CMakeFiles/main.dir/src/Uart.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/Uart.cpp",
+  "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/src/Uart.cpp"
+},
+{
+  "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
   "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include -g -o CMakeFiles/main.dir/src/image.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/src/image.cpp",
   "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/src/image.cpp"
 },
@@ -28,6 +33,11 @@
   "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
   "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include -g -o CMakeFiles/main.dir/LibraryAndTest/Cam_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/Cam_Test.cpp",
   "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/Cam_Test.cpp"
+},
+{
+  "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
+  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include -g -o CMakeFiles/main.dir/LibraryAndTest/Encoder_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/Encoder_Test.cpp",
+  "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/Encoder_Test.cpp"
 },
 {
   "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
@@ -56,6 +66,11 @@
 },
 {
   "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
+  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include -g -o CMakeFiles/main.dir/LibraryAndTest/PWM_Encoder.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/PWM_Encoder.cpp",
+  "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/PWM_Encoder.cpp"
+},
+{
+  "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
   "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include -g -o CMakeFiles/main.dir/LibraryAndTest/Pwm_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/Pwm_Test.cpp",
   "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/Pwm_Test.cpp"
 },
@@ -73,6 +88,16 @@
   "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
   "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include -g -o CMakeFiles/main.dir/LibraryAndTest/TFT_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/TFT_Test.cpp",
   "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/TFT_Test.cpp"
+},
+{
+  "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
+  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include -g -o CMakeFiles/main.dir/LibraryAndTest/Uart.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/Uart.cpp",
+  "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/Uart.cpp"
+},
+{
+  "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",
+  "command": "/opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/bin/loongarch64-linux-gnu-g++  -I/mnt/hgfs/ubuntu-shareddoc/code/allcode/include -I/home/hsl/opencv/install/include -g -o CMakeFiles/main.dir/LibraryAndTest/Uart_Test.cpp.o -c /mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/Uart_Test.cpp",
+  "file": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/LibraryAndTest/Uart_Test.cpp"
 },
 {
   "directory": "/mnt/hgfs/ubuntu-shareddoc/code/allcode/build",

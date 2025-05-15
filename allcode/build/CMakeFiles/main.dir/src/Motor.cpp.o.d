@@ -191,4 +191,10 @@ CMakeFiles/main.dir/src/Motor.cpp.o: \
  /opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/loongarch64-linux-gnu/sysroot/usr/include/bits/getopt_posix.h \
  /opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/loongarch64-linux-gnu/sysroot/usr/include/bits/getopt_core.h \
  /mnt/hgfs/ubuntu-shareddoc/code/allcode/include/MAP_ADDR.hpp \
- /mnt/hgfs/ubuntu-shareddoc/code/allcode/include/pwm.hpp
+ /mnt/hgfs/ubuntu-shareddoc/code/allcode/include/pwm.hpp \
+ /mnt/hgfs/ubuntu-shareddoc/code/allcode/include/PWM_Encoder.hpp \
+ /mnt/hgfs/ubuntu-shareddoc/code/allcode/include/pid.hpp \
+ /mnt/hgfs/ubuntu-shareddoc/code/allcode/include/Uart.hpp \
+ /opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/loongarch64-linux-gnu/sysroot/usr/include/termios.h \
+ /opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/loongarch64-linux-gnu/sysroot/usr/include/bits/termios.h \
+ /opt/loongson-gnu-toolchain-8.3-x86_64-loongarch64-linux-gnu-rc1.3-1/loongarch64-linux-gnu/sysroot/usr/include/sys/ttydefaults.h

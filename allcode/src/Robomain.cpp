@@ -101,25 +101,30 @@ Mat current_frame;
 
 void RoboInit(){
     Camera_Init();
-    //TFTSPI_Init(0);//占用0.2s左右
+    TFTSPI_Init(0);//占用0.2s左右
 }
 void Motion1(){
     BeepOff();
     RoboInit();
-    MotorController Motor{};
-    ServoController Servo(88, 2, 0.01, 0.01);
+    MotorController Motor{0.3, 0.1, 0.03, 0.3, 0.1, 0.03};
+    ServoController Servo(88, 2, 0, 0.01);
     sleep(1);
-    
-    while(1){
-        auto start = chrono::high_resolution_clock::now();  // 记录起始时间
-        Motor.MotorRun();
+    const double controlPeriod = 0.001; // 1ms控制周期
 
-        Mat frame = capture_frame();  // 假设的摄像头采集函数
-        double error = image_process(frame);  // 图像处理
-        Servo.Run(error);  // 舵机控制, error摄像头两线偏差
+    while(1){
+        
+        auto start = chrono::high_resolution_clock::now();  // 记录起始时间
+        Motor.BothMotorRun(10.0, 10.0);
+        
+        // Mat frame = capture_frame();  // 假设的摄像头采集函数
+        // double error = image_process(frame);  // 图像处理
+        // Servo.Run(error);  // 舵机控制, error摄像头两线偏差
         //Servo.Run(80);
-        auto end = chrono::high_resolution_clock::now();  // 记录结束时间
-        chrono::duration<double> elapsed = end - start;  // 计算耗时
-        cout << "Loop time: " << elapsed.count() << " seconds" << endl;
-    }
+       // 精确延时保证固定周期
+        auto end = chrono::high_resolution_clock::now();
+        chrono::duration<double> elapsed = end - start;
+        double sleepTime = controlPeriod - elapsed.count();
+        if(sleepTime > 0) {
+        usleep(static_cast<useconds_t>(sleepTime * 1e6));}
+}
 }

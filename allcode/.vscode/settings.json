@@ -5,6 +5,7 @@
         "atomic": "cpp",
         "chrono": "cpp",
         "array": "cpp",
-        "string_view": "cpp"
+        "string_view": "cpp",
+        "ostream": "cpp"
     }
 }

@@ -1,7 +1,5 @@
 #include "main.hpp"
-#include "gpio.hpp"
-#include "pwm.hpp"
-#include "gtim_pwm.hpp"
+
 // 蜂鸣器引脚初始化
 // HWGpio beep(61, GPIO_Mode_Out);
 
@@ -16,7 +14,7 @@ int main()
     // PwmDevTest();           // PWM 测试(设备文件)
     // PwmHWTest();            // PWM 测试(寄存器)
     //GtimPwmTest();          // Gtim PWM 测试(硬件)
-    // EncoderTest();          // 编码器测试(寄存器)
+     //EncoderDemo();         // 编码器测试(寄存器)
     //CameraTest();           // 摄像头测试
     // AdcFunTest();           // ADC 功能测试
     // TFTTest();              // TFT屏幕测试
@@ -25,11 +23,12 @@ int main()
     // usleepTest();           // usleep()函数测试 -- 以微秒为单位延时
     // nanosleepTest();        // nanosleep()函数测试 -- 以纳秒为单位延时
     // clock_nanosleepTest();  // clock_nanosleep()函数测试 -- 以纳秒为单位延时
+    //BeepOff();
     //MotorTest();            // 电机测试程序
     //ServoTest();            // 舵机测试程序
     // GpioTest();             // 久久派22个GPIO翻转测试
+    //Uart_Demo();
     
-    //BeepOff();
     Motion1();
 
 

@@ -153,6 +153,30 @@ LibraryAndTest/Cam_Test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/Cam_Test.cpp.s
 .PHONY : LibraryAndTest/Cam_Test.cpp.s
 
+LibraryAndTest/Encoder_Test.o: LibraryAndTest/Encoder_Test.cpp.o
+.PHONY : LibraryAndTest/Encoder_Test.o
+
+# target to build an object file
+LibraryAndTest/Encoder_Test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/Encoder_Test.cpp.o
+.PHONY : LibraryAndTest/Encoder_Test.cpp.o
+
+LibraryAndTest/Encoder_Test.i: LibraryAndTest/Encoder_Test.cpp.i
+.PHONY : LibraryAndTest/Encoder_Test.i
+
+# target to preprocess a source file
+LibraryAndTest/Encoder_Test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/Encoder_Test.cpp.i
+.PHONY : LibraryAndTest/Encoder_Test.cpp.i
+
+LibraryAndTest/Encoder_Test.s: LibraryAndTest/Encoder_Test.cpp.s
+.PHONY : LibraryAndTest/Encoder_Test.s
+
+# target to generate assembly for a file
+LibraryAndTest/Encoder_Test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/Encoder_Test.cpp.s
+.PHONY : LibraryAndTest/Encoder_Test.cpp.s
+
 LibraryAndTest/GPIO_Test.o: LibraryAndTest/GPIO_Test.cpp.o
 .PHONY : LibraryAndTest/GPIO_Test.o
 
@@ -273,6 +297,30 @@ LibraryAndTest/Motor_Test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/Motor_Test.cpp.s
 .PHONY : LibraryAndTest/Motor_Test.cpp.s
 
+LibraryAndTest/PWM_Encoder.o: LibraryAndTest/PWM_Encoder.cpp.o
+.PHONY : LibraryAndTest/PWM_Encoder.o
+
+# target to build an object file
+LibraryAndTest/PWM_Encoder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/PWM_Encoder.cpp.o
+.PHONY : LibraryAndTest/PWM_Encoder.cpp.o
+
+LibraryAndTest/PWM_Encoder.i: LibraryAndTest/PWM_Encoder.cpp.i
+.PHONY : LibraryAndTest/PWM_Encoder.i
+
+# target to preprocess a source file
+LibraryAndTest/PWM_Encoder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/PWM_Encoder.cpp.i
+.PHONY : LibraryAndTest/PWM_Encoder.cpp.i
+
+LibraryAndTest/PWM_Encoder.s: LibraryAndTest/PWM_Encoder.cpp.s
+.PHONY : LibraryAndTest/PWM_Encoder.s
+
+# target to generate assembly for a file
+LibraryAndTest/PWM_Encoder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/PWM_Encoder.cpp.s
+.PHONY : LibraryAndTest/PWM_Encoder.cpp.s
+
 LibraryAndTest/Pwm_Test.o: LibraryAndTest/Pwm_Test.cpp.o
 .PHONY : LibraryAndTest/Pwm_Test.o
 
@@ -368,6 +416,54 @@ LibraryAndTest/TFT_Test.s: LibraryAndTest/TFT_Test.cpp.s
 LibraryAndTest/TFT_Test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/TFT_Test.cpp.s
 .PHONY : LibraryAndTest/TFT_Test.cpp.s
+
+LibraryAndTest/Uart.o: LibraryAndTest/Uart.cpp.o
+.PHONY : LibraryAndTest/Uart.o
+
+# target to build an object file
+LibraryAndTest/Uart.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/Uart.cpp.o
+.PHONY : LibraryAndTest/Uart.cpp.o
+
+LibraryAndTest/Uart.i: LibraryAndTest/Uart.cpp.i
+.PHONY : LibraryAndTest/Uart.i
+
+# target to preprocess a source file
+LibraryAndTest/Uart.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/Uart.cpp.i
+.PHONY : LibraryAndTest/Uart.cpp.i
+
+LibraryAndTest/Uart.s: LibraryAndTest/Uart.cpp.s
+.PHONY : LibraryAndTest/Uart.s
+
+# target to generate assembly for a file
+LibraryAndTest/Uart.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/Uart.cpp.s
+.PHONY : LibraryAndTest/Uart.cpp.s
+
+LibraryAndTest/Uart_Test.o: LibraryAndTest/Uart_Test.cpp.o
+.PHONY : LibraryAndTest/Uart_Test.o
+
+# target to build an object file
+LibraryAndTest/Uart_Test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/Uart_Test.cpp.o
+.PHONY : LibraryAndTest/Uart_Test.cpp.o
+
+LibraryAndTest/Uart_Test.i: LibraryAndTest/Uart_Test.cpp.i
+.PHONY : LibraryAndTest/Uart_Test.i
+
+# target to preprocess a source file
+LibraryAndTest/Uart_Test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/Uart_Test.cpp.i
+.PHONY : LibraryAndTest/Uart_Test.cpp.i
+
+LibraryAndTest/Uart_Test.s: LibraryAndTest/Uart_Test.cpp.s
+.PHONY : LibraryAndTest/Uart_Test.s
+
+# target to generate assembly for a file
+LibraryAndTest/Uart_Test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/LibraryAndTest/Uart_Test.cpp.s
+.PHONY : LibraryAndTest/Uart_Test.cpp.s
 
 LibraryAndTest/gpio.o: LibraryAndTest/gpio.cpp.o
 .PHONY : LibraryAndTest/gpio.o
@@ -561,6 +657,30 @@ src/Servo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Servo.cpp.s
 .PHONY : src/Servo.cpp.s
 
+src/Uart.o: src/Uart.cpp.o
+.PHONY : src/Uart.o
+
+# target to build an object file
+src/Uart.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Uart.cpp.o
+.PHONY : src/Uart.cpp.o
+
+src/Uart.i: src/Uart.cpp.i
+.PHONY : src/Uart.i
+
+# target to preprocess a source file
+src/Uart.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Uart.cpp.i
+.PHONY : src/Uart.cpp.i
+
+src/Uart.s: src/Uart.cpp.s
+.PHONY : src/Uart.s
+
+# target to generate assembly for a file
+src/Uart.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/Uart.cpp.s
+.PHONY : src/Uart.cpp.s
+
 src/image.o: src/image.cpp.o
 .PHONY : src/image.o
 
@@ -621,6 +741,9 @@ help:
 	@echo "... LibraryAndTest/Cam_Test.o"
 	@echo "... LibraryAndTest/Cam_Test.i"
 	@echo "... LibraryAndTest/Cam_Test.s"
+	@echo "... LibraryAndTest/Encoder_Test.o"
+	@echo "... LibraryAndTest/Encoder_Test.i"
+	@echo "... LibraryAndTest/Encoder_Test.s"
 	@echo "... LibraryAndTest/GPIO_Test.o"
 	@echo "... LibraryAndTest/GPIO_Test.i"
 	@echo "... LibraryAndTest/GPIO_Test.s"
@@ -636,6 +759,9 @@ help:
 	@echo "... LibraryAndTest/Motor_Test.o"
 	@echo "... LibraryAndTest/Motor_Test.i"
 	@echo "... LibraryAndTest/Motor_Test.s"
+	@echo "... LibraryAndTest/PWM_Encoder.o"
+	@echo "... LibraryAndTest/PWM_Encoder.i"
+	@echo "... LibraryAndTest/PWM_Encoder.s"
 	@echo "... LibraryAndTest/Pwm_Test.o"
 	@echo "... LibraryAndTest/Pwm_Test.i"
 	@echo "... LibraryAndTest/Pwm_Test.s"
@@ -648,6 +774,12 @@ help:
 	@echo "... LibraryAndTest/TFT_Test.o"
 	@echo "... LibraryAndTest/TFT_Test.i"
 	@echo "... LibraryAndTest/TFT_Test.s"
+	@echo "... LibraryAndTest/Uart.o"
+	@echo "... LibraryAndTest/Uart.i"
+	@echo "... LibraryAndTest/Uart.s"
+	@echo "... LibraryAndTest/Uart_Test.o"
+	@echo "... LibraryAndTest/Uart_Test.i"
+	@echo "... LibraryAndTest/Uart_Test.s"
 	@echo "... LibraryAndTest/gpio.o"
 	@echo "... LibraryAndTest/gpio.i"
 	@echo "... LibraryAndTest/gpio.s"
@@ -672,6 +804,9 @@ help:
 	@echo "... src/Servo.o"
 	@echo "... src/Servo.i"
 	@echo "... src/Servo.s"
+	@echo "... src/Uart.o"
+	@echo "... src/Uart.i"
+	@echo "... src/Uart.s"
 	@echo "... src/image.o"
 	@echo "... src/image.i"
 	@echo "... src/image.s"

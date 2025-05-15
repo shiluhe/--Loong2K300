@@ -43,6 +43,19 @@ SetPWM::SetPWM(const string &mold, int cycle, int duty_cycle, const string &pola
     this->SetPolarity(polarity);
 }
 
+// SetPWM::SetPWM(const string &mold, int cycle, const string &polarity) : 
+//             Mold(mold), Cycle(cycle), Polarity(polarity)
+// {
+//     if (this->ExportPWM(mold) != 0)
+//     {
+//         this->UnexportPWM();
+//         this->ExportPWM(mold);
+//     }
+//     this->SetPeriod(cycle);
+//     //this->SetDutyCycle(duty_cycle);
+//     this->SetPolarity(polarity);
+// }
+
 
 /*LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
  * @函数名称：SetPWM::~SetPWM()

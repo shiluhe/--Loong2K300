@@ -43,7 +43,7 @@ uint8 get_start_point(uint8 start_row)
 	{
 		start_point_l[0] = i;//x
 		start_point_l[1] = start_row;//y
-		if (bin_image[start_row][i] == 1 && bin_image[start_row][i - 1] == 0)
+		if (bin_image[start_row][i] == 255 && bin_image[start_row][i - 1] == 0)
 		{
 			printf("找到左边起点image[%d][%d]\n", start_row,i);
 			l_found = 1;
@@ -55,7 +55,7 @@ uint8 get_start_point(uint8 start_row)
 	{
 		start_point_r[0] = i;//x
 		start_point_r[1] = start_row;//y
-		if (bin_image[start_row][i] == 1 && bin_image[start_row][i + 1] == 0)
+		if (bin_image[start_row][i] == 255 && bin_image[start_row][i + 1] == 0)
 		{
 			printf("找到右边起点image[%d][%d]\n",start_row, i);
 			r_found = 1;
@@ -176,7 +176,7 @@ void search_l_r(uint16 break_flag, uint8(*image)[image_w], uint16 *l_stastic, ui
 		for (i = 0; i < 8; i++)
 		{
 			if (image[search_filds_l[i][1]][search_filds_l[i][0]] == 0
-				&& image[search_filds_l[(i + 1) & 7][1]][search_filds_l[(i + 1) & 7][0]] == 1)
+				&& image[search_filds_l[(i + 1) & 7][1]][search_filds_l[(i + 1) & 7][0]] == 255)
 			{
 				temp_l[index_l][0] = search_filds_l[(i)][0];
 				temp_l[index_l][1] = search_filds_l[(i)][1];
@@ -243,7 +243,7 @@ void search_l_r(uint16 break_flag, uint8(*image)[image_w], uint16 *l_stastic, ui
 		for (i = 0; i < 8; i++)
 		{
 			if (image[search_filds_r[i][1]][search_filds_r[i][0]] == 0
-				&& image[search_filds_r[(i + 1) & 7][1]][search_filds_r[(i + 1) & 7][0]] == 1)
+				&& image[search_filds_r[(i + 1) & 7][1]][search_filds_r[(i + 1) & 7][0]] == 255)
 			{
 				temp_r[index_r][0] = search_filds_r[(i)][0];
 				temp_r[index_r][1] = search_filds_r[(i)][1];
@@ -344,6 +344,43 @@ void get_right(uint16 total_R)
 	}
 }
 
+//定义膨胀和腐蚀的阈值区间
+#define threshold_max	255*6//此参数可根据自己的需求调节
+#define threshold_min	255*1//此参数可根据自己的需求调节
+void image_filter(uint8(*bin_image)[image_w])//形态学滤波，简单来说就是膨胀和腐蚀的思想
+{
+	uint16 i, j;
+	uint32 num = 0;
+
+
+	for (i = 1; i < image_h - 1; i++)
+	{
+		for (j = 1; j < (image_w - 1); j++)
+		{
+			//统计八个方向的像素值
+			num =
+				bin_image[i - 1][j - 1] + bin_image[i - 1][j] + bin_image[i - 1][j + 1]
+				+ bin_image[i][j - 1] + bin_image[i][j + 1]
+				+ bin_image[i + 1][j - 1] + bin_image[i + 1][j] + bin_image[i + 1][j + 1];
+
+
+			if (num >= threshold_max && bin_image[i][j] == 0)
+			{
+
+				bin_image[i][j] = 255;//白  可以搞成宏定义，方便更改
+
+			}
+			if (num <= threshold_min && bin_image[i][j] == 255)
+			{
+
+				bin_image[i][j] = 0;//黑
+
+			}
+
+		}
+	}
+
+}
 
 /*
 函数名称：void image_draw_rectan(uint8(*image)[image_w])
@@ -382,6 +419,7 @@ void image_draw_rectan(uint8(*image)[image_w])
 
 static VideoCapture cap(0);  // 使用static保持摄像头持续打开
 void Camera_Init() {
+
     if (!cap.isOpened()) {
         cerr << "Error opening video stream" << endl;
         return;
@@ -445,12 +483,12 @@ void Cam_Address(Mat frame)
 		Mat gray, binary, morph;
         // 转灰度
         cvtColor(frame, gray, COLOR_BGR2GRAY);
-		//gray.convertTo(gray, -1, 1.5, 50); // alpha=1.5（对比度）, beta=50（亮度）
+		gray.convertTo(gray, -1, 1.2, 20); // alpha=1.5（对比度）, beta=50（亮度）
 /////////////////////////////////TFT灰度图像显示///////////////////////////////////////////		
 		//TFTSPI_Road(0, 0, 120, 160, gray.data);
 ////////////////////////////////TFT灰度图像显示/////////////////////////////////////////////		
         // 二值化
-		//equalizeHist(gray, gray);
+		equalizeHist(gray, gray);
         threshold(gray, binary, 1, 255, THRESH_BINARY | THRESH_OTSU);
 		//threshold(gray, binary, 70, 255, THRESH_BINARY);
 		//adaptiveThreshold(gray, binary, 255, ADAPTIVE_THRESH_GAUSSIAN_C, THRESH_BINARY, 11, 2);
@@ -474,7 +512,7 @@ void Cam_Address(Mat frame)
         {
             for (int j = 0; j < image_w; j++)
             {
-                bin_image[i][j] = (binary.at<uchar>(i, j) > 0) ? 1 : 0; // 0: 黑, 1: 白
+                bin_image[i][j] = binary.at<uchar>(i, j) ; // 0: 黑, 255: 白
             }
         }
         //这里可以选择调试打印
@@ -533,17 +571,17 @@ int count = 0;
 // Get_image(mt9v03x_image);
 // turn_to_bin();
 // /*提取赛道边界*/
-// image_filter(bin_image);//滤波
 Cam_Address(frame);//灰度化、二值化
+image_filter(bin_image);//滤波
 image_draw_rectan(bin_image);//预处理
 //清零
 data_stastics_l = 0;
 data_stastics_r = 0;
 ///////////////////////////////////////TFT屏幕显示二值化图像///////////////////////////////////////////
-// uint8_t *tft_buffer = (uint8_t *)malloc(image_w * image_h * 2);
-// BinToTFTFormat((uint8_t*)bin_image, image_w, image_h, tft_buffer);
-// TFTSPI_Show_Pic2(0, 0, image_w, image_h, tft_buffer);
-// free(tft_buffer);
+uint8_t *tft_buffer = (uint8_t *)malloc(image_w * image_h * 2);
+BinToTFTFormat((uint8_t*)bin_image, image_w, image_h, tft_buffer);
+TFTSPI_Show_Pic2(0, 0, image_w, image_h, tft_buffer);
+free(tft_buffer);
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 if (get_start_point(image_h - 2))//找到起点了，再执行八领域
 {
@@ -576,9 +614,9 @@ else{
     {
         center_line[i] = (l_border[i] + r_border[i]) >> 1; // 求中线
 
-    // TFTSPI_Draw_Dot(center_line[i], i, u16GREEN);// 画中线（绿色）
-    // TFTSPI_Draw_Dot(l_border[i], i, u16BLUE);// 画左边线（蓝色）
-    // TFTSPI_Draw_Dot(r_border[i], i, u16RED);// 画右边线（红色）
+    TFTSPI_Draw_Dot(center_line[i], i, u16GREEN);// 画中线（绿色）
+    TFTSPI_Draw_Dot(l_border[i], i, u16BLUE);// 画左边线（蓝色）
+    TFTSPI_Draw_Dot(r_border[i], i, u16RED);// 画右边线（红色）
 
 	// 计算误差 error
 	if (i >= (image_h * 2.0 / 3.0)) // 只计算 image_h * 2/3 到 image_h 之间的误差

@@ -26,9 +26,15 @@
 
 #include <opencv2/opencv.hpp>
 
-
+#include "Uart.hpp"
+#include "gpio.hpp"
+#include "pwm.hpp"
+#include "gtim_pwm.hpp"
+#include "PWM_Encoder.hpp"
 
 using namespace cv;
 using namespace std;
 
 void Motion1();
+void MotorTest();
+void BeepOff();

@@ -29,11 +29,12 @@
 
 ServoController::ServoController(int pin, double kp, double ki, double kd, double minAngle, double maxAngle, double centerAngle)
       : pwm(pin, 2, LS_GTIM_INVERSED, 2000000 - 1),
-        pid(kp, ki, kd),
+        pid(kp, ki, kd, PIDMode::Pos),
         minAngle(minAngle),
         maxAngle(maxAngle),
         centerAngle(centerAngle){
         pwm.Enable();  // 初始化时启用 PWM
+        pwm.SetDutyCycle(170000.0);
         }
 ServoController::~ServoController(){
     pwm.Disable(); //禁用pwm
@@ -45,7 +46,7 @@ ServoController::~ServoController(){
 */
 void ServoController::Run(double error) {
 
-    double output = pid.calculate(error);//output限制在-1～1
+    double output = pid.Tick(error);//output限制在-1～1
     double angleControl = centerAngle - output * 30;  // 计算目标角度
 
     // 限制角度范围
